@@ -2,30 +2,33 @@ function AboutUs() {
   return (
     <>
       <section>
-        <div className="theme-container w-full mx-auto">
+        <div
+          className="theme-container w-full mx-auto pt-16"
+          style={{ paddingTop: "280px" }}
+        >
           <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
             <div className="col-span-6">
               <div className="max-w-[476px]">
                 <h1 className="border text-main-black border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
-                  About Company
+                  About us
                 </h1>
                 <h2 className="text-24 sm:text-48 font-semibold text-main-black pt-5">
-                  Empowering Your Business for Success with Expert Guidance
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 </h2>
                 <p className="text-paragraph pt-5 sm:pt-10">
-                  Business agencies often feature a diverse team of
-                  professionals expertise in various areas such as marketing,
-                  finance
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique distinctio, unde adipisci veritatis nam consectetur
+                  error maiores
                 </p>
                 <ul className="flex flex-col gap-0.5 mt-6 mb-11">
                   <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                    Write and translate to all languages
+                    Lorem ipsum dolor sit amet consectetur.
                   </li>
                   <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                    Crafting quality content has been very easier
+                    Lorem ipsum dolor sit amet consectetur.
                   </li>
                   <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                    Built for scale and enterprise level security
+                    Lorem ipsum dolor sit amet consectetur.
                   </li>
                 </ul>
                 <a href="service.html">

@@ -2,7 +2,7 @@ function HomeBanner() {
   return (
     <>
       <main className="w-full">
-        <section className="w-full py-3 relative overflow-hidden bg-white">
+        <section className="w-full py-3  overflow-hidden bg-white">
           <img
             src="https://quomodothemes.website/html/quland-html/assets/images/home-five/hero/bg.webp"
             alt=""
@@ -72,11 +72,11 @@ function HomeBanner() {
                           </defs>
                         </svg>
                         <span className="font-semibold text-18 sm:text-20 text-white">
-                          Quland Business Agency
+                          Lorem ipsum dolor sit.
                         </span>
                       </div>
                       <h1 className="font-semibold text-24 sm:text-48 xl:text-75 text-white mt-4 sm:mt-8">
-                        The Innovating Solutions for Your Business Challenges
+                        Lorem ipsum dolor sit amet consectetur. Lorem, ipsum.
                       </h1>
                       <div className="flex flex-col sm:flex-row gap-8 pt-5 sm:pt-11">
                         <a href="service.html">
@@ -176,7 +176,7 @@ function HomeBanner() {
               </div>
             </div>
 
-            <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] pb-16 sm:pb-[130px]">
+            {/* <div className="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-[30px] pb-16 sm:pb-[130px]">
               <div
                 data-aos="fade-up"
                 className="px-6 py-5 sm:px-[50px] col-span-4 sm:py-10 bg-white rounded-[20px] group shadow-card"
@@ -288,7 +288,7 @@ function HomeBanner() {
                   to enhance
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>

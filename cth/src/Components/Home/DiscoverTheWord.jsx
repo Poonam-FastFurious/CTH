@@ -1,15 +1,21 @@
 function DiscoverTheWord() {
   return (
     <>
-      <section className="bg-buisness-light-black py-16 md:py-[130px] relative">
+      <section
+        className=" py-16 md:py-[130px] relative"
+        style={{ backgroundColor: "#E7DDCD" }}
+      >
         <div className="theme-container w-full mx-auto">
           <div className="flex flex-col xl:flex-row justify-between w-full">
             <div className="">
-              <h1 className="font-medium text-white border border-white/10 bg-white/5 px-5 rounded-[30px] py-1 w-fit">
-                Team Member
+              <h1
+                style={{ backgroundColor: "white" }}
+                className="font-medium text-black border border-black/10 bg-black/5 px-5 rounded-[30px] py-1 w-fit"
+              >
+                Lorem ipsum
               </h1>
-              <h2 className="text-white font-semibold text-24 sm:text-48 pt-5">
-                Experience Team Member
+              <h2 className="text-black font-semibold text-24 sm:text-48 pt-5">
+                Discover the World
               </h2>
             </div>
             <div className="flex flex-col sm:flex-row gap-10 items-center">
@@ -22,8 +28,8 @@ function DiscoverTheWord() {
                 >
                   28+
                 </span>
-                <span className="text-20 sm:text-22 font-normal text-white/55">
-                  Team Member
+                <span className="text-20 sm:text-22 font-normal text-white ">
+                  Lorem, ipsum.
                 </span>
               </h1>
               <a href="#">
@@ -53,7 +59,7 @@ function DiscoverTheWord() {
             </div>
           </div>
           <div className="grid gap-[30px] grid-cols-3 md:grid-cols-6 lg:grid-cols-12 mt-10 md:mt-[70px]">
-            <div className="col-span-3">
+            <div className="col-span-3 border border-buisness-red bg-white">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -152,16 +158,75 @@ function DiscoverTheWord() {
                   </a>
                 </div>
               </div>
-              <h1 className="text-22 font-semibold text-white mt-6 white_card_title">
+              <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
                 <a href="team-members.html"> Steven N. Manning</a>
               </h1>
-              <p className="text-white mt-1">Product Designer</p>
-            </div>
 
-            <div className="col-span-3">
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="22"
+                  height="17"
+                  viewBox="0 0 22 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5999 3.45088V3.95088H13.0999H15.6803C16.2414 3.95088 16.7285 4.44357 16.7285 4.96196V5.97307C16.7232 5.97306 16.7178 5.97305 16.7124 5.97305C15.4541 5.97305 14.284 6.34623 13.3072 6.98044H1.21423V4.96196C1.21423 4.44357 1.70136 3.95088 2.26245 3.95088H4.8428H5.3428V3.45088V1.9398C5.3428 1.4214 5.82994 0.928711 6.39102 0.928711H11.5517C12.1128 0.928711 12.5999 1.4214 12.5999 1.9398V3.45088ZM11.0357 3.95088H11.5357V3.45088V2.44349V1.94349H11.0357H6.90709H6.40709V2.44349V3.45088V3.95088H6.90709H11.0357ZM12.5678 12.0137C12.5678 9.79564 14.4099 7.98044 16.7124 7.98044C19.0149 7.98044 20.8571 9.79564 20.8571 12.0137C20.8571 14.2317 19.0149 16.0469 16.7124 16.0469C14.4099 16.0469 12.5678 14.2317 12.5678 12.0137ZM18.4635 13.0174C18.9004 13.0174 19.2767 12.6673 19.2767 12.2117V11.8157C19.2767 11.3601 18.9004 11.01 18.4635 11.01H17.7285V9.80121C17.7285 9.34559 17.3522 8.99553 16.9153 8.99553H16.5099C16.073 8.99553 15.6967 9.34559 15.6967 9.80121V12.2117C15.6967 12.6673 16.073 13.0174 16.5099 13.0174H18.4635ZM7.42316 11.0026H10.6257C10.5674 11.3303 10.5357 11.6678 10.5357 12.0137C10.5357 12.7227 10.6636 13.4016 10.8946 14.0322H2.26245C1.70136 14.0322 1.21423 13.5395 1.21423 13.0211V8.98783H6.40709V9.99891C6.40709 10.5647 6.8734 11.0026 7.42316 11.0026Z"
+                    fill="black"
+                    stroke="black"
+                  />
+                </svg>{" "}
+                <span className=" mt-1 "> Marketing Head at Xyz</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.01611 0.213867C3.90232 0.213867 0.714233 2.97 0.714233 6.69268C0.714233 8.6398 1.58705 10.3225 3.00776 11.4848C3.25307 11.6871 3.20254 11.8042 3.24426 13.053C3.24754 13.1405 3.27412 13.2259 3.32168 13.3018C3.36924 13.3777 3.43633 13.4417 3.51711 13.4884C3.59788 13.5351 3.68989 13.5629 3.78509 13.5695C3.8803 13.5761 3.97581 13.5612 4.06331 13.5262C5.6177 12.8987 5.63767 12.8491 5.90119 12.9148C10.4045 14.0511 15.2857 11.4091 15.2857 6.69268C15.2857 2.97 12.1302 0.213867 8.01611 0.213867ZM12.4005 5.19962L10.2559 8.31205C10.1749 8.42908 10.0684 8.52953 9.9431 8.60708C9.8178 8.68463 9.67637 8.73762 9.52768 8.76272C9.37899 8.78783 9.22625 8.78451 9.07903 8.75298C8.9318 8.72145 8.79327 8.66238 8.67211 8.57947L6.96585 7.40878C6.88957 7.35634 6.79679 7.32799 6.70145 7.32799C6.6061 7.32799 6.51332 7.35634 6.43704 7.40878L4.1347 9.00956C3.82741 9.22313 3.42493 8.88568 3.63204 8.58755L5.77663 5.47513C5.85758 5.35806 5.96405 5.25759 6.08936 5.18001C6.21466 5.10244 6.3561 5.04944 6.5048 5.02433C6.6535 4.99922 6.80625 5.00255 6.95349 5.0341C7.10072 5.06566 7.23925 5.12476 7.36039 5.2077L9.06607 6.37813C9.14235 6.43057 9.23512 6.45892 9.33047 6.45892C9.42582 6.45892 9.51859 6.43057 9.59487 6.37813L11.8984 4.77896C12.2051 4.56405 12.6076 4.90123 12.4005 5.19962Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
+              >
+                <p className="text-black mt-1  ">Experience</p>
+                <p className="text-black mt-1  ">Experience</p>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
+              >
+                <p className="text-black mt-1  ">8year</p>
+                <p className="text-black mt-1  ">100%</p>
+              </div>
+            </div>
+            <div className="col-span-3 border border-buisness-red bg-white">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
-                  src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/2.webp"
+                  src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
                   alt=""
                   className="w-full object-cover rounded-lg overflow-hidden"
                 />
@@ -257,16 +322,75 @@ function DiscoverTheWord() {
                   </a>
                 </div>
               </div>
-              <h1 className="text-22 font-semibold text-white mt-6 white_card_title">
-                <a href="team-members.html"> Lawrence P. Harrison</a>
+              <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
+                <a href="team-members.html"> Steven N. Manning</a>
               </h1>
-              <p className="text-white mt-1">Web Developer</p>
-            </div>
 
-            <div className="col-span-3">
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="22"
+                  height="17"
+                  viewBox="0 0 22 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5999 3.45088V3.95088H13.0999H15.6803C16.2414 3.95088 16.7285 4.44357 16.7285 4.96196V5.97307C16.7232 5.97306 16.7178 5.97305 16.7124 5.97305C15.4541 5.97305 14.284 6.34623 13.3072 6.98044H1.21423V4.96196C1.21423 4.44357 1.70136 3.95088 2.26245 3.95088H4.8428H5.3428V3.45088V1.9398C5.3428 1.4214 5.82994 0.928711 6.39102 0.928711H11.5517C12.1128 0.928711 12.5999 1.4214 12.5999 1.9398V3.45088ZM11.0357 3.95088H11.5357V3.45088V2.44349V1.94349H11.0357H6.90709H6.40709V2.44349V3.45088V3.95088H6.90709H11.0357ZM12.5678 12.0137C12.5678 9.79564 14.4099 7.98044 16.7124 7.98044C19.0149 7.98044 20.8571 9.79564 20.8571 12.0137C20.8571 14.2317 19.0149 16.0469 16.7124 16.0469C14.4099 16.0469 12.5678 14.2317 12.5678 12.0137ZM18.4635 13.0174C18.9004 13.0174 19.2767 12.6673 19.2767 12.2117V11.8157C19.2767 11.3601 18.9004 11.01 18.4635 11.01H17.7285V9.80121C17.7285 9.34559 17.3522 8.99553 16.9153 8.99553H16.5099C16.073 8.99553 15.6967 9.34559 15.6967 9.80121V12.2117C15.6967 12.6673 16.073 13.0174 16.5099 13.0174H18.4635ZM7.42316 11.0026H10.6257C10.5674 11.3303 10.5357 11.6678 10.5357 12.0137C10.5357 12.7227 10.6636 13.4016 10.8946 14.0322H2.26245C1.70136 14.0322 1.21423 13.5395 1.21423 13.0211V8.98783H6.40709V9.99891C6.40709 10.5647 6.8734 11.0026 7.42316 11.0026Z"
+                    fill="black"
+                    stroke="black"
+                  />
+                </svg>{" "}
+                <span className=" mt-1 "> Marketing Head at Xyz</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.01611 0.213867C3.90232 0.213867 0.714233 2.97 0.714233 6.69268C0.714233 8.6398 1.58705 10.3225 3.00776 11.4848C3.25307 11.6871 3.20254 11.8042 3.24426 13.053C3.24754 13.1405 3.27412 13.2259 3.32168 13.3018C3.36924 13.3777 3.43633 13.4417 3.51711 13.4884C3.59788 13.5351 3.68989 13.5629 3.78509 13.5695C3.8803 13.5761 3.97581 13.5612 4.06331 13.5262C5.6177 12.8987 5.63767 12.8491 5.90119 12.9148C10.4045 14.0511 15.2857 11.4091 15.2857 6.69268C15.2857 2.97 12.1302 0.213867 8.01611 0.213867ZM12.4005 5.19962L10.2559 8.31205C10.1749 8.42908 10.0684 8.52953 9.9431 8.60708C9.8178 8.68463 9.67637 8.73762 9.52768 8.76272C9.37899 8.78783 9.22625 8.78451 9.07903 8.75298C8.9318 8.72145 8.79327 8.66238 8.67211 8.57947L6.96585 7.40878C6.88957 7.35634 6.79679 7.32799 6.70145 7.32799C6.6061 7.32799 6.51332 7.35634 6.43704 7.40878L4.1347 9.00956C3.82741 9.22313 3.42493 8.88568 3.63204 8.58755L5.77663 5.47513C5.85758 5.35806 5.96405 5.25759 6.08936 5.18001C6.21466 5.10244 6.3561 5.04944 6.5048 5.02433C6.6535 4.99922 6.80625 5.00255 6.95349 5.0341C7.10072 5.06566 7.23925 5.12476 7.36039 5.2077L9.06607 6.37813C9.14235 6.43057 9.23512 6.45892 9.33047 6.45892C9.42582 6.45892 9.51859 6.43057 9.59487 6.37813L11.8984 4.77896C12.2051 4.56405 12.6076 4.90123 12.4005 5.19962Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
+              >
+                <p className="text-black mt-1  ">Experience</p>
+                <p className="text-black mt-1  ">Experience</p>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
+              >
+                <p className="text-black mt-1  ">8year</p>
+                <p className="text-black mt-1  ">100%</p>
+              </div>
+            </div>{" "}
+            <div className="col-span-3 border border-buisness-red bg-white">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
-                  src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/3.webp"
+                  src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
                   alt=""
                   className="w-full object-cover rounded-lg overflow-hidden"
                 />
@@ -362,18 +486,77 @@ function DiscoverTheWord() {
                   </a>
                 </div>
               </div>
-              <h1 className="text-22 font-semibold text-white mt-6 white_card_title">
-                <a href="team-members.html">Matthew D. Banks</a>
+              <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
+                <a href="team-members.html"> Steven N. Manning</a>
               </h1>
-              <p className="text-white mt-1">Graphics Designer</p>
-            </div>
 
-            <div className="col-span-3">
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="22"
+                  height="17"
+                  viewBox="0 0 22 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5999 3.45088V3.95088H13.0999H15.6803C16.2414 3.95088 16.7285 4.44357 16.7285 4.96196V5.97307C16.7232 5.97306 16.7178 5.97305 16.7124 5.97305C15.4541 5.97305 14.284 6.34623 13.3072 6.98044H1.21423V4.96196C1.21423 4.44357 1.70136 3.95088 2.26245 3.95088H4.8428H5.3428V3.45088V1.9398C5.3428 1.4214 5.82994 0.928711 6.39102 0.928711H11.5517C12.1128 0.928711 12.5999 1.4214 12.5999 1.9398V3.45088ZM11.0357 3.95088H11.5357V3.45088V2.44349V1.94349H11.0357H6.90709H6.40709V2.44349V3.45088V3.95088H6.90709H11.0357ZM12.5678 12.0137C12.5678 9.79564 14.4099 7.98044 16.7124 7.98044C19.0149 7.98044 20.8571 9.79564 20.8571 12.0137C20.8571 14.2317 19.0149 16.0469 16.7124 16.0469C14.4099 16.0469 12.5678 14.2317 12.5678 12.0137ZM18.4635 13.0174C18.9004 13.0174 19.2767 12.6673 19.2767 12.2117V11.8157C19.2767 11.3601 18.9004 11.01 18.4635 11.01H17.7285V9.80121C17.7285 9.34559 17.3522 8.99553 16.9153 8.99553H16.5099C16.073 8.99553 15.6967 9.34559 15.6967 9.80121V12.2117C15.6967 12.6673 16.073 13.0174 16.5099 13.0174H18.4635ZM7.42316 11.0026H10.6257C10.5674 11.3303 10.5357 11.6678 10.5357 12.0137C10.5357 12.7227 10.6636 13.4016 10.8946 14.0322H2.26245C1.70136 14.0322 1.21423 13.5395 1.21423 13.0211V8.98783H6.40709V9.99891C6.40709 10.5647 6.8734 11.0026 7.42316 11.0026Z"
+                    fill="black"
+                    stroke="black"
+                  />
+                </svg>{" "}
+                <span className=" mt-1 "> Marketing Head at Xyz</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.01611 0.213867C3.90232 0.213867 0.714233 2.97 0.714233 6.69268C0.714233 8.6398 1.58705 10.3225 3.00776 11.4848C3.25307 11.6871 3.20254 11.8042 3.24426 13.053C3.24754 13.1405 3.27412 13.2259 3.32168 13.3018C3.36924 13.3777 3.43633 13.4417 3.51711 13.4884C3.59788 13.5351 3.68989 13.5629 3.78509 13.5695C3.8803 13.5761 3.97581 13.5612 4.06331 13.5262C5.6177 12.8987 5.63767 12.8491 5.90119 12.9148C10.4045 14.0511 15.2857 11.4091 15.2857 6.69268C15.2857 2.97 12.1302 0.213867 8.01611 0.213867ZM12.4005 5.19962L10.2559 8.31205C10.1749 8.42908 10.0684 8.52953 9.9431 8.60708C9.8178 8.68463 9.67637 8.73762 9.52768 8.76272C9.37899 8.78783 9.22625 8.78451 9.07903 8.75298C8.9318 8.72145 8.79327 8.66238 8.67211 8.57947L6.96585 7.40878C6.88957 7.35634 6.79679 7.32799 6.70145 7.32799C6.6061 7.32799 6.51332 7.35634 6.43704 7.40878L4.1347 9.00956C3.82741 9.22313 3.42493 8.88568 3.63204 8.58755L5.77663 5.47513C5.85758 5.35806 5.96405 5.25759 6.08936 5.18001C6.21466 5.10244 6.3561 5.04944 6.5048 5.02433C6.6535 4.99922 6.80625 5.00255 6.95349 5.0341C7.10072 5.06566 7.23925 5.12476 7.36039 5.2077L9.06607 6.37813C9.14235 6.43057 9.23512 6.45892 9.33047 6.45892C9.42582 6.45892 9.51859 6.43057 9.59487 6.37813L11.8984 4.77896C12.2051 4.56405 12.6076 4.90123 12.4005 5.19962Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
+              >
+                <p className="text-black mt-1  ">Experience</p>
+                <p className="text-black mt-1  ">Experience</p>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
+              >
+                <p className="text-black mt-1  ">8year</p>
+                <p className="text-black mt-1  ">100%</p>
+              </div>
+            </div>{" "}
+            <div className="col-span-3 border border-buisness-red bg-white">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
-                  src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/4.webp"
-                  className="w-full object-cover rounded-lg overflow-hidden"
+                  src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
                   alt=""
+                  className="w-full object-cover rounded-lg overflow-hidden"
                 />
 
                 <div className="flex bg-buisness-red absolute bottom-5 translate-y-16 group-hover/main:translate-y-0 transition-all duration-300 rounded-md overflow-hidden">
@@ -467,10 +650,70 @@ function DiscoverTheWord() {
                   </a>
                 </div>
               </div>
-              <h1 className="text-22 font-semibold text-white mt-6 white_card_title">
-                <a href="team-members.html">Richard S. Sanders</a>
+              <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
+                <a href="team-members.html"> Steven N. Manning</a>
               </h1>
-              <p className="text-white mt-1">Motion Designer</p>
+
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="22"
+                  height="17"
+                  viewBox="0 0 22 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5999 3.45088V3.95088H13.0999H15.6803C16.2414 3.95088 16.7285 4.44357 16.7285 4.96196V5.97307C16.7232 5.97306 16.7178 5.97305 16.7124 5.97305C15.4541 5.97305 14.284 6.34623 13.3072 6.98044H1.21423V4.96196C1.21423 4.44357 1.70136 3.95088 2.26245 3.95088H4.8428H5.3428V3.45088V1.9398C5.3428 1.4214 5.82994 0.928711 6.39102 0.928711H11.5517C12.1128 0.928711 12.5999 1.4214 12.5999 1.9398V3.45088ZM11.0357 3.95088H11.5357V3.45088V2.44349V1.94349H11.0357H6.90709H6.40709V2.44349V3.45088V3.95088H6.90709H11.0357ZM12.5678 12.0137C12.5678 9.79564 14.4099 7.98044 16.7124 7.98044C19.0149 7.98044 20.8571 9.79564 20.8571 12.0137C20.8571 14.2317 19.0149 16.0469 16.7124 16.0469C14.4099 16.0469 12.5678 14.2317 12.5678 12.0137ZM18.4635 13.0174C18.9004 13.0174 19.2767 12.6673 19.2767 12.2117V11.8157C19.2767 11.3601 18.9004 11.01 18.4635 11.01H17.7285V9.80121C17.7285 9.34559 17.3522 8.99553 16.9153 8.99553H16.5099C16.073 8.99553 15.6967 9.34559 15.6967 9.80121V12.2117C15.6967 12.6673 16.073 13.0174 16.5099 13.0174H18.4635ZM7.42316 11.0026H10.6257C10.5674 11.3303 10.5357 11.6678 10.5357 12.0137C10.5357 12.7227 10.6636 13.4016 10.8946 14.0322H2.26245C1.70136 14.0322 1.21423 13.5395 1.21423 13.0211V8.98783H6.40709V9.99891C6.40709 10.5647 6.8734 11.0026 7.42316 11.0026Z"
+                    fill="black"
+                    stroke="black"
+                  />
+                </svg>{" "}
+                <span className=" mt-1 "> Marketing Head at Xyz</span>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  marginLeft: "12px",
+                  alignItems: "center",
+                  gap: "8px",
+                }}
+              >
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.01611 0.213867C3.90232 0.213867 0.714233 2.97 0.714233 6.69268C0.714233 8.6398 1.58705 10.3225 3.00776 11.4848C3.25307 11.6871 3.20254 11.8042 3.24426 13.053C3.24754 13.1405 3.27412 13.2259 3.32168 13.3018C3.36924 13.3777 3.43633 13.4417 3.51711 13.4884C3.59788 13.5351 3.68989 13.5629 3.78509 13.5695C3.8803 13.5761 3.97581 13.5612 4.06331 13.5262C5.6177 12.8987 5.63767 12.8491 5.90119 12.9148C10.4045 14.0511 15.2857 11.4091 15.2857 6.69268C15.2857 2.97 12.1302 0.213867 8.01611 0.213867ZM12.4005 5.19962L10.2559 8.31205C10.1749 8.42908 10.0684 8.52953 9.9431 8.60708C9.8178 8.68463 9.67637 8.73762 9.52768 8.76272C9.37899 8.78783 9.22625 8.78451 9.07903 8.75298C8.9318 8.72145 8.79327 8.66238 8.67211 8.57947L6.96585 7.40878C6.88957 7.35634 6.79679 7.32799 6.70145 7.32799C6.6061 7.32799 6.51332 7.35634 6.43704 7.40878L4.1347 9.00956C3.82741 9.22313 3.42493 8.88568 3.63204 8.58755L5.77663 5.47513C5.85758 5.35806 5.96405 5.25759 6.08936 5.18001C6.21466 5.10244 6.3561 5.04944 6.5048 5.02433C6.6535 4.99922 6.80625 5.00255 6.95349 5.0341C7.10072 5.06566 7.23925 5.12476 7.36039 5.2077L9.06607 6.37813C9.14235 6.43057 9.23512 6.45892 9.33047 6.45892C9.42582 6.45892 9.51859 6.43057 9.59487 6.37813L11.8984 4.77896C12.2051 4.56405 12.6076 4.90123 12.4005 5.19962Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
+              >
+                <p className="text-black mt-1  ">Experience</p>
+                <p className="text-black mt-1  ">Experience</p>
+              </div>
+              <div
+                className=""
+                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
+              >
+                <p className="text-black mt-1  ">8year</p>
+                <p className="text-black mt-1  ">100%</p>
+              </div>
             </div>
           </div>
         </div>
