@@ -115,251 +115,169 @@ function Contactus() {
         </p>
       </div>
       <InquiryForm />
-      <section className="relative mt-16 md:mt-[130px]">
-        <div className="w-full relative z-10">
+      <section className="relative md:mt-12 ">
+        <div className="w-full pb-16 md:pb-[30px] relative z-10 ">
           <div className="theme-container mx-auto">
-            <div className="flex justify-center items-center relative">
-              <div className="grid grid-cols-6 xl:grid-cols-11 w-full relative z-10 gap-y-5 xl:gap-[118px]">
-                {/* <div className="col-span-6 xl:col-span-5 sm:pr-5">
-                  <h1 className="py-0.5 px-5 bg-purple/5 border-purple/10 border rounded-[30px] font-medium text-purple w-fit mx-auto xl:mx-0">
-                    FAQs
-                  </h1>
-                  <h2 className="text-24 sm:text-48 font-semibold text-main-black mt-5 max-w-[720px] mb-14 mx-auto xl:mx-0 text-center xl:text-left">
-                    Have Any Questions On Mind? Questions & Answer here
-                  </h2>
-                  <div className="w-full relative">
-                    <img
-                      className="w-full rounded-xl"
-                      src="assets/images/faq-1.webp"
-                      alt=""
-                    />
-                    <div className="w-10 px-2 sm:w-16 md:w-[100px] aspect-square rounded-lg bg-it-blue top-2 right-2 sm:-top-5 sm:-right-5 absolute flex justify-center items-center">
+            <div className="flex justify-center items-center px-4 md:px-0 py-10 md:py-20 relative rounded-3xl overflow-hidden bg-[#F6F4F1]">
+              <div className="max-w-[850px] w-full flex justify-center items-center flex-col relative z-10">
+                <h1 className="py-0.5 px-5 bg-purple/5 border-buisness-red border rounded-[30px] font-medium text-blue-seo">
+                  FAQs
+                </h1>
+                <h2 className="text-24 sm:text-48 font-semibold text-main-black mt-5">
+                  Asked Questions & Answer
+                </h2>
+                <div className="flex flex-col gap-2.5 w-full mt-5 md:mt-10 p-0 sm:p-5">
+                  <div
+                    data-aos="fade-up"
+                    className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-buisness-red bg-purple/5"
+                    name="faq-1"
+                  >
+                    <div className="w-full flex justify-between items-center pointer-events-none h-fit">
+                      <h1 className="font-semibold sm:text-18 text-main-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta quod maxime corrupti.
+                      </h1>
                       <svg
-                        width="64"
-                        height="45"
-                        viewBox="0 0 64 45"
+                        width="19"
+                        height="10"
+                        viewBox="0 0 19 10"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M20.5136 0H48.4158L27.9021 30.4053H0L20.5136 0Z"
-                          fill="white"
-                        ></path>
-                        <path
-                          d="M21.7364 33.2233L13.791 45H43.0167L63.5303 14.5947H41.96L29.3917 33.2233H21.7364Z"
-                          fill="white"
+                          d="M2 2L9.5 8L17 2"
+                          stroke="#89580A"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>
                       </svg>
                     </div>
+                    <p className="mt-3.5 text-paragraph pointer-events-none h-fit">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur perferendis aspernatur, accusantium, ullam
+                      tempora in deleniti vel minus illo, tenetur dicta? Earum
+                      ipsam sit maiores?
+                    </p>
                   </div>
-                </div> */}
-                <div className="col-span-6">
+
                   <div
                     data-aos="fade-up"
-                    className="flex flex-col gap-2.5 w-full"
+                    className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-buisness-red bg-purple/5"
+                    name="faq-1"
                   >
-                    <div
-                      className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-purple/10 bg-purple/5"
-                      name="faq-1"
-                    >
-                      <div className="w-full flex justify-between items-center pointer-events-none h-fit">
-                        <h1 className="font-semibold sm:text-18 text-main-black">
-                          What is digital marketing?
-                        </h1>
-                        <svg
-                          width="19"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="#794AFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="mt-3.5 text-paragraph pointer-events-none h-fit">
-                        However, link building isn't merely about quantity;
-                        quality and relevance are paramount. High-quality links
-                        from reputable websites carry more weight in search
-                        engine algorithms, contributing significantly to a
-                        website's overall SEO performance.
-                      </p>
+                    <div className="w-full flex justify-between items-center pointer-events-none h-fit">
+                      <h1 className="font-semibold sm:text-18 text-main-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta quod maxime corrupti.
+                      </h1>
+                      <svg
+                        width="19"
+                        height="10"
+                        viewBox="0 0 19 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 2L9.5 8L17 2"
+                          stroke="#89580A"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                      </svg>
                     </div>
+                    <p className="mt-3.5 text-paragraph pointer-events-none h-fit">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur perferendis aspernatur, accusantium, ullam
+                      tempora in deleniti vel minus illo, tenetur dicta? Earum
+                      ipsam sit maiores?
+                    </p>
+                  </div>
 
-                    <div
-                      className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit border border-purple/10"
-                      name="faq-2"
-                    >
-                      <div className="w-full flex justify-between items-center pointer-events-none">
-                        <h1 className="font-semibold sm:text-18 text-main-black">
-                          Why is digital marketing important?
-                        </h1>
-                        <svg
-                          width="19"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="#794AFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="mt-3.5 text-paragraph pointer-events-none">
-                        However, link building isn't merely about quantity;
-                        quality and relevance are paramount. High-quality links
-                        from reputable websites carry more weight in search
-                        engine algorithms, contributing significantly to a
-                        website's overall SEO performance.
-                      </p>
+                  <div
+                    data-aos="fade-up"
+                    className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-buisness-red bg-purple/5"
+                    name="faq-1"
+                  >
+                    <div className="w-full flex justify-between items-center pointer-events-none h-fit">
+                      <h1 className="font-semibold sm:text-18 text-main-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta quod maxime corrupti.
+                      </h1>
+                      <svg
+                        width="19"
+                        height="10"
+                        viewBox="0 0 19 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 2L9.5 8L17 2"
+                          stroke="#89580A"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                      </svg>
                     </div>
+                    <p className="mt-3.5 text-paragraph pointer-events-none h-fit">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur perferendis aspernatur, accusantium, ullam
+                      tempora in deleniti vel minus illo, tenetur dicta? Earum
+                      ipsam sit maiores?
+                    </p>
+                  </div>
 
-                    <div
-                      className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-purple/10"
-                      name="faq-3"
-                    >
-                      <div className="w-full flex justify-between items-center pointer-events-none h-fit">
-                        <h1 className="font-semibold sm:text-18 text-main-black">
-                          What are the key components of digital marketing?
-                        </h1>
-                        <svg
-                          width="19"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="#794AFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="mt-3.5 text-paragraph pointer-events-none h-fit">
-                        However, link building isn't merely about quantity;
-                        quality and relevance are paramount. High-quality links
-                        from reputable websites carry more weight in search
-                        engine algorithms, contributing significantly to a
-                        website's overall SEO performance.
-                      </p>
+                  <div
+                    data-aos="fade-up"
+                    className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit border border-buisness-red bg-purple/5"
+                    name="faq-1"
+                  >
+                    <div className="w-full flex justify-between items-center pointer-events-none h-fit">
+                      <h1 className="font-semibold sm:text-18 text-main-black">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dicta quod maxime corrupti.
+                      </h1>
+                      <svg
+                        width="19"
+                        height="10"
+                        viewBox="0 0 19 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 2L9.5 8L17 2"
+                          stroke="#89580A"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        ></path>
+                      </svg>
                     </div>
-
-                    <div
-                      className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit border border-purple/10"
-                      name="faq-4"
-                    >
-                      <div className="w-full flex justify-between items-center pointer-events-none">
-                        <h1 className="font-semibold sm:text-18 text-main-black">
-                          What is Search Engine Optimization (SEO)?
-                        </h1>
-                        <svg
-                          width="19"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="#794AFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="mt-3.5 text-paragraph pointer-events-none">
-                        However, link building isn't merely about quantity;
-                        quality and relevance are paramount. High-quality links
-                        from reputable websites carry more weight in search
-                        engine algorithms, contributing significantly to a
-                        website's overall SEO performance.
-                      </p>
-                    </div>
-
-                    <div
-                      className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit border border-purple/10"
-                      name="faq-5"
-                    >
-                      <div className="w-full flex justify-between items-center pointer-events-none">
-                        <h1 className="font-semibold sm:text-18 text-main-black">
-                          What is Pay-Per-Click Advertising (PPC)?
-                        </h1>
-                        <svg
-                          width="19"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="#794AFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="mt-3.5 text-paragraph pointer-events-none">
-                        However, link building isn't merely about quantity;
-                        quality and relevance are paramount. High-quality links
-                        from reputable websites carry more weight in search
-                        engine algorithms, contributing significantly to a
-                        website's overall SEO performance.
-                      </p>
-                    </div>
-
-                    <div
-                      className="py-5 px-2 md:px-9 w-full rounded-[10px] service-faq-toggler overflow-hidden transition-all duration-300 max-h-fit border border-purple/10"
-                      name="faq-6"
-                    >
-                      <div className="w-full flex justify-between items-center pointer-events-none">
-                        <h1 className="font-semibold sm:text-18 text-main-black">
-                          What is Social Media Marketing (SMM)?
-                        </h1>
-                        <svg
-                          width="19"
-                          height="10"
-                          viewBox="0 0 19 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2L9.5 8L17 2"
-                            stroke="#794AFF"
-                            strokeWidth="3"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </div>
-                      <p className="mt-3.5 text-paragraph pointer-events-none">
-                        However, link building isn't merely about quantity;
-                        quality and relevance are paramount. High-quality links
-                        from reputable websites carry more weight in search
-                        engine algorithms, contributing significantly to a
-                        website's overall SEO performance.
-                      </p>
-                    </div>
+                    <p className="mt-3.5 text-paragraph pointer-events-none h-fit">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Consequatur perferendis aspernatur, accusantium, ullam
+                      tempora in deleniti vel minus illo, tenetur dicta? Earum
+                      ipsam sit maiores?
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="overflow-hidden mt-10 md:mt-[130px] w-full">
+        <div className=" relative w-full h-[240px] sm:h-[450px] md:h-[540px] lg:h-[700px] xl:h-[700px] mx-auto xl:rounded-lg overflow-hidden ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56038.870682226014!2d77.35448446557618!3d28.616889411973446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5992452d761%3A0xaaa44725147c1507!2sJSS%20Academy%20of%20Technical%20Education!5e0!3m2!1sen!2sin!4v1719557681515!5m2!1sen!2sin"
+            width="100%"
+            height="850"
+            allowfullscreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </>

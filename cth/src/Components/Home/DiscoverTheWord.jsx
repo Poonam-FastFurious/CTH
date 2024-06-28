@@ -386,7 +386,7 @@ function DiscoverTheWord() {
                 <p className="text-black mt-1  ">8year</p>
                 <p className="text-black mt-1  ">100%</p>
               </div>
-            </div>{" "}
+            </div>
             <div className="col-span-3 border border-buisness-red bg-white">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
@@ -550,7 +550,7 @@ function DiscoverTheWord() {
                 <p className="text-black mt-1  ">8year</p>
                 <p className="text-black mt-1  ">100%</p>
               </div>
-            </div>{" "}
+            </div>
             <div className="col-span-3 border border-buisness-red bg-white">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img

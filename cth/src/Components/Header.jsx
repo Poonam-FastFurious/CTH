@@ -23,7 +23,10 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="about" className="home-two-nav-item relative ">
+                <Link
+                  to="associatedMembers"
+                  className="home-two-nav-item relative "
+                >
                   Associated Members
                 </Link>
               </li>
@@ -46,13 +49,13 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link className="home-two-nav-item relative " to="service">
+                <Link className="home-two-nav-item relative " to="AboutUs">
                   About us
                 </Link>
               </li>
             </ul>
             <div className="flex gap-7 items-center">
-              <Link to="#">
+              <Link to="/Login">
                 <div
                   className="home-two-btn-white-rev home-two-btn-white-rev-sm group bg-transparent border-[#101828]/10"
                   style={{ backgroundColor: "#B08D57" }}
@@ -71,7 +74,7 @@ function Header() {
                     <path
                       className=" stroke-main-black transition-all duration-300"
                       d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                      stroke="white"
+                      stroke="black"
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -81,11 +84,11 @@ function Header() {
               </Link>
               <Link to="blog">
                 <div
-                  className="home-two-btn-white-rev home-two-btn-white-rev-sm group bg-transparent border-[#101828]/100"
-                  style={{ border: "black", backgroundColor: "#B08D57" }}
+                  className="home-two-btn-white-rev home-two-btn-white-rev-sm group bg-transparent border-[#101828]/100  "
+                  style={{ backgroundColor: "#B08D57" }}
                 >
                   <span className="text-base  text-main-black transition-all duration-300 font-semibold font-inter relative z-10">
-                    Get A Quote
+                    Get Started
                   </span>
                   <svg
                     className="relative z-10"
@@ -96,7 +99,7 @@ function Header() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      className=" stroke-white transition-all duration-300"
+                      className="  stroke-main-black transition-all duration-300"
                       d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
                       stroke="white"
                       strokeWidth="1.5"

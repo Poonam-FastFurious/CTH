@@ -14,6 +14,10 @@ import Home from "./Components/Home/Home";
 import Blogdetails from "./Components/Blogs/Blogdetails";
 import BlogList from "./Components/Blogs/BlogList";
 import Contactus from "./Components/ContactUs/Contactus";
+import Associatemember from "./Components/Associatemember/Associatemember";
+import Aboutus from "./Components/AboutUs/Aboutus";
+import Login from "./Components/Authentication/Login";
+import Footer from "./Components/Footer";
 
 function App() {
   useEffect(() => {
@@ -35,7 +39,11 @@ function App() {
             <Route path="/blog" element={<Blogdetails />} />
             <Route path="/bloglist" element={<BlogList />} />
             <Route path="/contact" element={<Contactus />} />
+            <Route path="/associatedMembers" element={<Associatemember />} />
+            <Route path="/AboutUs" element={<Aboutus />} />
+            <Route path="/Login" element={<Login />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </>

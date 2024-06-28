@@ -3,7 +3,7 @@ function AboutUs() {
     <>
       <section>
         <div
-          className="theme-container w-full mx-auto pt-16"
+          className="theme-container w-full mx-auto pt-16 "
           style={{ paddingTop: "280px" }}
         >
           <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
@@ -88,7 +88,7 @@ function AboutUs() {
                 alt=""
                 className="relative z-10"
               />
-              <div className="bg-buisness-red p-[30px] rounded-2xl absolute z-20 bottom-8 w-[295px]">
+              <div className="bg-buisness-red p-[30px] rounded-2xl absolute z-10 bottom-8 w-[295px]">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-five/hero/about-card-shape.webp"
                   alt=""
