@@ -18,11 +18,13 @@ import Associatemember from "./Components/Associatemember/Associatemember";
 import Aboutus from "./Components/AboutUs/Aboutus";
 import Login from "./Components/Authentication/Login";
 import Footer from "./Components/Footer";
+import Gallery from "./Components/Gallery/Gallery";
+import SignUp from "./Components/Authentication/SignUp";
 
 function App() {
   useEffect(() => {
     AOS.init({
-      disable: function () {
+      disable: function() {
         let maxWidth = 800;
         return window.innerWidth < maxWidth;
       },
@@ -42,6 +44,8 @@ function App() {
             <Route path="/associatedMembers" element={<Associatemember />} />
             <Route path="/AboutUs" element={<Aboutus />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/Signup" element={<SignUp />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
           <Footer />
         </BrowserRouter>

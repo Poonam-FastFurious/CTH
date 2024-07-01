@@ -2,6 +2,7 @@
 import { FaHome } from "react-icons/fa";
 import { MdCall, MdOutlineMailLock } from "react-icons/md";
 import InquiryForm from "../Home/InquiryForm";
+import { Link } from "react-router-dom";
 
 function Contactus() {
   return (
@@ -23,18 +24,18 @@ function Contactus() {
               <img src="assets/images/home-one-hero-circle-shadow.svg" alt="" />
             </div>
           </div>
-          <div className="theme-container mx-auto h-fit w-fit relative z-20">
+          <div className="theme-container mx-auto h-fit w-fit relative z-10">
             <div className="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
               <h1 className="text-main-black text-34 sm:text-48 font-semibold w-full text-center">
                 Contact
               </h1>
               <div className="flex gap-5 items-center justify-center mt-4">
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
                 >
                   Home
-                </a>
+                </Link>
                 <svg
                   width="6"
                   height="12"
@@ -50,12 +51,12 @@ function Contactus() {
                     strokeLinejoin="round"
                   ></path>
                 </svg>
-                <a
-                  href="#"
+                <Link
+                  href="/Contact"
                   className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
                 >
                   contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -105,7 +106,7 @@ function Contactus() {
         </div>
       </section>
       <div className="flex flex-col items-center">
-        <h2 className="sm:text-48 text-[40px] font-semibold text-main-black  text-center lg:w-[685px] w-full">
+        <h2 className="sm:text-48 text-[40px] font-bold text-main-black  text-center lg:w-[685px] w-full">
           FEEL FREE TO TALK TO US
         </h2>
         <p className=" w-[40%] mx-auto text-center mb-[50px]">
@@ -120,11 +121,8 @@ function Contactus() {
           <div className="theme-container mx-auto">
             <div className="flex justify-center items-center px-4 md:px-0 py-10 md:py-20 relative rounded-3xl overflow-hidden bg-[#F6F4F1]">
               <div className="max-w-[850px] w-full flex justify-center items-center flex-col relative z-10">
-                <h1 className="py-0.5 px-5 bg-purple/5 border-buisness-red border rounded-[30px] font-medium text-blue-seo">
-                  FAQs
-                </h1>
-                <h2 className="text-24 sm:text-48 font-semibold text-main-black mt-5">
-                  Asked Questions & Answer
+                <h2 className="text-[40px] sm:text-48 font-bold text-main-black mt-5">
+                  Frequently Asked Questions
                 </h2>
                 <div className="flex flex-col gap-2.5 w-full mt-5 md:mt-10 p-0 sm:p-5">
                   <div

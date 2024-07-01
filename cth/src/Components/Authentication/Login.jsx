@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Login() {
   return (
     <>
@@ -11,24 +13,18 @@ function Login() {
             />
           </div>
 
-          <div className="flex flex-col justify-center  sm:h-screen p-4">
-            <div className="max-w-md w-full mx-auto border border-gray-300 rounded-2xl p-8">
+          <div className="flex flex-col justify-center  sm:h-auto p-4">
+            <div className="max-w-md w-full mx-auto border border-gray-300 rounded-2xl p-8 shadow-xl">
               <form className="max-w-xl w-full p-6 mx-auto">
-                <div className="mb-12">
-                  <h3 className="text-gray-800 text-4xl font-extrabold">
+                <div className="mb-12 flex justify-between">
+                  <button className="text-gray-800 text-[20px] font-bold">
                     Sign in
-                  </h3>
-                  <p className="text-gray-800 text-sm mt-6">
-                    Don have an account
-                    <a
-                      href="javascript:void(0);"
-                      className="text-[#B08D57] font-semibold hover:underline ml-1 whitespace-nowrap"
-                    >
-                      Register here
-                    </a>
-                  </p>
+                  </button>
+                  <button className="text-gray-800 text-[20px] font-bold">
+                    <Link to="/Signup">Sign up</Link>
+                  </button>
                 </div>
-
+                <hr />
                 <div>
                   <label className="text-gray-800 text-lg block mb-2">
                     Email/Mobile
@@ -119,12 +115,12 @@ function Login() {
                     </label>
                   </div>
                   <div>
-                    <a
-                      href="jajvascript:void(0);"
+                    <Link
+                      href="#"
                       className="text-[#B08D57] font-semibold text-sm hover:underline"
                     >
                       Forgot Password?
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

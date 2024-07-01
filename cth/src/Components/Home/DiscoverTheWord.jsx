@@ -1,38 +1,18 @@
+import { Link } from "react-router-dom";
+
 function DiscoverTheWord() {
   return (
     <>
-      <section
-        className=" py-16 md:py-[130px] relative"
-        style={{ backgroundColor: "#E7DDCD" }}
-      >
+      <section className=" py-16 md:py-[130px] relative bg-[#E7DDCD]">
         <div className="theme-container w-full mx-auto">
           <div className="flex flex-col xl:flex-row justify-between w-full">
             <div className="">
-              <h1
-                style={{ backgroundColor: "white" }}
-                className="font-medium text-black border border-black/10 bg-black/5 px-5 rounded-[30px] py-1 w-fit"
-              >
-                Lorem ipsum
-              </h1>
-              <h2 className="text-black font-semibold text-24 sm:text-48 pt-5">
+              <h2 className="text-black font-semibold text-[40px] sm:text-48 pt-5">
                 Discover the World
               </h2>
             </div>
             <div className="flex flex-col sm:flex-row gap-10 items-center">
-              <h1 className="text-48 sm:text-65 text-white font-semibold justify-between w-full sm:w-fit flex items-center gap-4">
-                <span
-                  data-scroll-qs="scroll"
-                  data-count-qs="28"
-                  data-type-qs="+"
-                  data-speed-qs="1000"
-                >
-                  28+
-                </span>
-                <span className="text-20 sm:text-22 font-normal text-white ">
-                  Lorem, ipsum.
-                </span>
-              </h1>
-              <a href="#">
+              <Link to="#">
                 <div className="home-two-btn-bg group bg-buisness-light-black border-white/10 py-[15px]">
                   <span className="text-base group-hover:text-buisness-light-black text-white transition-all duration-300 font-semibold font-inter relative z-10">
                     Join Our Team
@@ -55,11 +35,11 @@ function DiscoverTheWord() {
                     ></path>
                   </svg>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="grid gap-[30px] grid-cols-3 md:grid-cols-6 lg:grid-cols-12 mt-10 md:mt-[70px]">
-            <div className="col-span-3 border border-buisness-red bg-white">
+            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -68,8 +48,8 @@ function DiscoverTheWord() {
                 />
 
                 <div className="flex bg-buisness-red absolute bottom-5 translate-y-16 group-hover/main:translate-y-0 transition-all duration-300 rounded-md overflow-hidden">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="facebook"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -88,9 +68,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="twitter"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -109,9 +89,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="instagram"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -132,9 +112,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="dribble"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -155,21 +135,14 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
-                <a href="team-members.html"> Steven N. Manning</a>
+                <Link to="associatedMembers"> Steven N. Manning</Link>
               </h1>
 
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[8px]">
                 <svg
                   width="22"
                   height="17"
@@ -182,17 +155,10 @@ function DiscoverTheWord() {
                     fill="black"
                     stroke="black"
                   />
-                </svg>{" "}
+                </svg>
                 <span className=" mt-1 "> Marketing Head at Xyz</span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[15px]">
                 <svg
                   width="16"
                   height="14"
@@ -208,22 +174,18 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
-              >
-                <p className="text-black mt-1  ">Experience</p>
-                <p className="text-black mt-1  ">Experience</p>
-              </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
-              >
-                <p className="text-black mt-1  ">8year</p>
-                <p className="text-black mt-1  ">100%</p>
+              <div className=" bg-[#E7DDCD] ">
+                <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
+                  <p className="text-black mt-1  ">Experience</p>
+                  <p className="text-black mt-1  ">Avg. Attendance</p>
+                </div>
+                <div className=" flex ml-8 items-center  gap-24 w-full mx-auto">
+                  <p className="text-black mt-1  ">8 years</p>
+                  <p className="text-black mt-1  ">100%</p>
+                </div>
               </div>
             </div>
-            <div className="col-span-3 border border-buisness-red bg-white">
+            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -232,8 +194,8 @@ function DiscoverTheWord() {
                 />
 
                 <div className="flex bg-buisness-red absolute bottom-5 translate-y-16 group-hover/main:translate-y-0 transition-all duration-300 rounded-md overflow-hidden">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="facebook"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -252,9 +214,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="twitter"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -273,9 +235,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="instagram"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -296,9 +258,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="dribble"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -319,21 +281,14 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
-                <a href="team-members.html"> Steven N. Manning</a>
+                <Link to="associatedMembers"> Steven N. Manning</Link>
               </h1>
 
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[8px]">
                 <svg
                   width="22"
                   height="17"
@@ -346,17 +301,10 @@ function DiscoverTheWord() {
                     fill="black"
                     stroke="black"
                   />
-                </svg>{" "}
+                </svg>
                 <span className=" mt-1 "> Marketing Head at Xyz</span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[15px]">
                 <svg
                   width="16"
                   height="14"
@@ -372,22 +320,18 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
-              >
-                <p className="text-black mt-1  ">Experience</p>
-                <p className="text-black mt-1  ">Experience</p>
-              </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
-              >
-                <p className="text-black mt-1  ">8year</p>
-                <p className="text-black mt-1  ">100%</p>
+              <div className=" bg-[#E7DDCD] ">
+                <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
+                  <p className="text-black mt-1  ">Experience</p>
+                  <p className="text-black mt-1  ">Avg. Attendance</p>
+                </div>
+                <div className=" flex ml-8 items-center  gap-24 w-full mx-auto">
+                  <p className="text-black mt-1  ">8 years</p>
+                  <p className="text-black mt-1  ">100%</p>
+                </div>
               </div>
             </div>
-            <div className="col-span-3 border border-buisness-red bg-white">
+            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -396,8 +340,8 @@ function DiscoverTheWord() {
                 />
 
                 <div className="flex bg-buisness-red absolute bottom-5 translate-y-16 group-hover/main:translate-y-0 transition-all duration-300 rounded-md overflow-hidden">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="facebook"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -416,9 +360,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="twitter"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -437,9 +381,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="instagram"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -460,9 +404,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="dribble"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -483,21 +427,14 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
-                <a href="team-members.html"> Steven N. Manning</a>
+                <Link to="associatedMembers"> Steven N. Manning</Link>
               </h1>
 
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[8px]">
                 <svg
                   width="22"
                   height="17"
@@ -510,17 +447,10 @@ function DiscoverTheWord() {
                     fill="black"
                     stroke="black"
                   />
-                </svg>{" "}
+                </svg>
                 <span className=" mt-1 "> Marketing Head at Xyz</span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[15px]">
                 <svg
                   width="16"
                   height="14"
@@ -536,22 +466,18 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
-              >
-                <p className="text-black mt-1  ">Experience</p>
-                <p className="text-black mt-1  ">Experience</p>
-              </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
-              >
-                <p className="text-black mt-1  ">8year</p>
-                <p className="text-black mt-1  ">100%</p>
+              <div className=" bg-[#E7DDCD] ">
+                <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
+                  <p className="text-black mt-1  ">Experience</p>
+                  <p className="text-black mt-1  ">Avg. Attendance</p>
+                </div>
+                <div className=" flex ml-8 items-center  gap-24 w-full mx-auto">
+                  <p className="text-black mt-1  ">8 years</p>
+                  <p className="text-black mt-1  ">100%</p>
+                </div>
               </div>
             </div>
-            <div className="col-span-3 border border-buisness-red bg-white">
+            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -560,8 +486,8 @@ function DiscoverTheWord() {
                 />
 
                 <div className="flex bg-buisness-red absolute bottom-5 translate-y-16 group-hover/main:translate-y-0 transition-all duration-300 rounded-md overflow-hidden">
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="facebook"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -580,9 +506,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="twitter"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -601,9 +527,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="instagram"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -624,9 +550,9 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     target="blank"
                     aria-label="dribble"
                     className="group w-10 h-10 flex justify-center items-center overflow-hidden relative before:inline-block before:absolute before:z-0 before:w-full before:h-full before:bg-white before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
@@ -647,21 +573,14 @@ function DiscoverTheWord() {
                         fill="white"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <h1 className="text-22 font-normal text-black mt-6 white_card_title px-4">
-                <a href="team-members.html"> Steven N. Manning</a>
+                <Link to="associatedMembers"> Steven N. Manning</Link>
               </h1>
 
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[8px]">
                 <svg
                   width="22"
                   height="17"
@@ -674,17 +593,10 @@ function DiscoverTheWord() {
                     fill="black"
                     stroke="black"
                   />
-                </svg>{" "}
+                </svg>
                 <span className=" mt-1 "> Marketing Head at Xyz</span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  marginLeft: "12px",
-                  alignItems: "center",
-                  gap: "8px",
-                }}
-              >
+              <div className=" flex ml-[12px] items-center gap-[15px]">
                 <svg
                   width="16"
                   height="14"
@@ -700,19 +612,15 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "25px" }}
-              >
-                <p className="text-black mt-1  ">Experience</p>
-                <p className="text-black mt-1  ">Experience</p>
-              </div>
-              <div
-                className=""
-                style={{ display: "flex", marginLeft: "12px", gap: "70px" }}
-              >
-                <p className="text-black mt-1  ">8year</p>
-                <p className="text-black mt-1  ">100%</p>
+              <div className=" bg-[#E7DDCD] ">
+                <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
+                  <p className="text-black mt-1  ">Experience</p>
+                  <p className="text-black mt-1  ">Avg. Attendance</p>
+                </div>
+                <div className=" flex ml-8 items-center  gap-24 w-full mx-auto">
+                  <p className="text-black mt-1  ">8 years</p>
+                  <p className="text-black mt-1  ">100%</p>
+                </div>
               </div>
             </div>
           </div>

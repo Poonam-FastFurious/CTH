@@ -1,6 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
+import { Autoplay, Navigation, Pagination, Keyboard } from "swiper/modules";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 function TestiMonial() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <>
       <section className="py-16 md:py-[130px] bg-[#ECE4D7] mt-12">
@@ -17,6 +22,34 @@ function TestiMonial() {
                 className="swiper-wrapper"
                 spaceBetween={50}
                 slidesPerView={3}
+                modules={[Autoplay, Pagination, Navigation, Keyboard]}
+                navigation={{
+                  prevEl: prevRef.current,
+                  nextEl: nextRef.current,
+                }}
+                keyboard={true}
+                breakpoints={{
+                  "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  "@0.75": {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  "@1.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                  },
+                  "@1.50": {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                  },
+                }}
+                onBeforeInit={(swiper) => {
+                  swiper.params.navigation.prevEl = prevRef.current;
+                  swiper.params.navigation.nextEl = nextRef.current;
+                }}
               >
                 <SwiperSlide className=" pr-3">
                   <div className="pb-[192px] pr-[30px] w-full  relative">
@@ -37,7 +70,7 @@ function TestiMonial() {
                       <h2 className="text-20 font-semibold mt-3 max-w-[230px] group-hover:text-white">
                         Best Consulting Services Provider Agency
                       </h2>
-                      <a href="service-details.html">
+                      <Link to="#">
                         <div className="flex items-center gap-2 group mt-4">
                           <span className="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                             Read More
@@ -58,7 +91,7 @@ function TestiMonial() {
                             ></path>
                           </svg>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -76,12 +109,12 @@ function TestiMonial() {
                         className="absolute right-2 top-bottom-moving"
                       />
                       <h1 className="h-10 w-10 border-2 rounded-full border-buisness-red group-hover:border-white group-hover:text-white flex justify-center items-center text-base tracking-tight text-main-black font-semibold">
-                        01
+                        02
                       </h1>
                       <h2 className="text-20 font-semibold mt-3 max-w-[230px] group-hover:text-white">
                         Best Consulting Services Provider Agency
                       </h2>
-                      <a href="service-details.html">
+                      <Link to="#">
                         <div className="flex items-center gap-2 group mt-4">
                           <span className="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                             Read More
@@ -102,10 +135,10 @@ function TestiMonial() {
                             ></path>
                           </svg>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
-                </SwiperSlide>{" "}
+                </SwiperSlide>
                 <SwiperSlide className=" pr-3">
                   <div className="pb-[192px] pr-[30px] w-full relative">
                     <img
@@ -120,12 +153,12 @@ function TestiMonial() {
                         className="absolute right-2 top-bottom-moving"
                       />
                       <h1 className="h-10 w-10 border-2 rounded-full border-buisness-red group-hover:border-white group-hover:text-white flex justify-center items-center text-base tracking-tight text-main-black font-semibold">
-                        01
+                        03
                       </h1>
                       <h2 className="text-20 font-semibold mt-3 max-w-[230px] group-hover:text-white">
                         Best Consulting Services Provider Agency
                       </h2>
-                      <a href="service-details.html">
+                      <Link to="#">
                         <div className="flex items-center gap-2 group mt-4">
                           <span className="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                             Read More
@@ -146,7 +179,7 @@ function TestiMonial() {
                             ></path>
                           </svg>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -157,19 +190,19 @@ function TestiMonial() {
                       alt=""
                       className="w-full max-w-[380px]"
                     />
-                    <div className="group shadow-card-xm pl-5 pr-5 md:pl-10 md:pr-16 lg:pl-5 lg:pr-5 xl:pl-10 xl:pr-16 py-[30px] rounded-2xl absolute top-[40%] md:top-[50%] z-10 bg-white -right-0 h-[166px] hover:h-[205px] transition-all duration-300 hover:bg-buisness-red overflow-hidden h5-story_slider_active_card ">
+                    <div className="group shadow-card-xm pl-5 pr-5 md:pl-10 md:pr-16 lg:pl-5 lg:pr-5 xl:pl-10 xl:pr-16 py-[30px] rounded-2xl absolute top-[40%] md:top-[50%] z-10 bg-white -right-0 h-[166px] hover:h-[205px] transition-all duration-300 hover:bg-buisness-red overflow-hidden  ">
                       <img
                         src="https://quomodothemes.website/html/quland-html/assets/images/home-five/hero/about-card-shape.webp"
                         alt=""
                         className="absolute right-2 top-bottom-moving"
                       />
                       <h1 className="h-10 w-10 border-2 rounded-full border-buisness-red group-hover:border-white group-hover:text-white flex justify-center items-center text-base tracking-tight text-main-black font-semibold">
-                        01
+                        04
                       </h1>
                       <h2 className="text-20 font-semibold mt-3 max-w-[230px] group-hover:text-white">
                         Best Consulting Services Provider Agency
                       </h2>
-                      <a href="service-details.html">
+                      <Link to="#">
                         <div className="flex items-center gap-2 group mt-4">
                           <span className="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                             Read More
@@ -190,7 +223,7 @@ function TestiMonial() {
                             ></path>
                           </svg>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>{" "}
@@ -208,12 +241,12 @@ function TestiMonial() {
                         className="absolute right-2 top-bottom-moving"
                       />
                       <h1 className="h-10 w-10 border-2 rounded-full border-buisness-red group-hover:border-white group-hover:text-white flex justify-center items-center text-base tracking-tight text-main-black font-semibold">
-                        01
+                        05
                       </h1>
                       <h2 className="text-20 font-semibold mt-3 max-w-[230px] group-hover:text-white">
                         Best Consulting Services Provider Agency
                       </h2>
-                      <a href="service-details.html">
+                      <Link to="#">
                         <div className="flex items-center gap-2 group mt-4">
                           <span className="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
                             Read More
@@ -234,58 +267,64 @@ function TestiMonial() {
                             ></path>
                           </svg>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>
               </Swiper>
             </div>
+            <div className="relative w-fit mx-auto flex items-center">
+              <div className="flex justify-between absolute w-full">
+                <button
+                  className="group h5-story-prev w-[30px] h-[30px] rounded-full flex items-center justify-center bg-buisness-dark-black/10 border-buisness-dark-black/20 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-buisness-dark-black before:bg-buisness-dark-black relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300"
+                  ref={prevRef}
+                >
+                  <svg
+                    className="relative z-10 pointer-events-none"
+                    width="12"
+                    height="10"
+                    viewBox="0 0 12 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      className="stroke-buisness-dark-black group-hover:stroke-white"
+                      d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+                <button
+                  className="group rotate-180 h5-story-next w-[30px] h-[30px] rounded-full flex items-center justify-center bg-buisness-dark-black/10 border-buisness-dark-black/20 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-buisness-dark-black before:bg-buisness-dark-black relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300"
+                  ref={nextRef}
+                >
+                  <svg
+                    className="relative z-10 pointer-events-none"
+                    width="12"
+                    height="10"
+                    viewBox="0 0 12 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      className="stroke-buisness-dark-black group-hover:stroke-white"
+                      d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div className="h5-story-pagination px-10  -mt-20"></div>
+            </div>
           </div>
         </div>
       </section>
-      {/* <div className="relative w-fit mx-auto flex items-center">
-        <div className="flex justify-between absolute w-full">
-          <button className="group h5-story-prev w-[30px] h-[30px] rounded-full flex items-center justify-center bg-buisness-dark-black/10 border-buisness-dark-black/20 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-buisness-dark-black before:bg-buisness-dark-black relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
-            <svg
-              className="relative z-10 pointer-events-none"
-              width="12"
-              height="10"
-              viewBox="0 0 12 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                className="stroke-buisness-dark-black group-hover:stroke-white"
-                d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-            </svg>
-          </button>
-          <button className="group rotate-180 h5-story-next w-[30px] h-[30px] rounded-full flex items-center justify-center bg-buisness-dark-black/10 border-buisness-dark-black/20 overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-buisness-dark-black before:bg-buisness-dark-black relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
-            <svg
-              className="relative z-10 pointer-events-none"
-              width="12"
-              height="10"
-              viewBox="0 0 12 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                className="stroke-buisness-dark-black group-hover:stroke-white"
-                d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25"
-                stroke="white"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div className="h5-story-pagination px-10"></div>
-      </div> */}
     </>
   );
 }

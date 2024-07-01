@@ -1,11 +1,10 @@
+import { Link } from "react-router-dom";
+
 function AboutUs() {
   return (
     <>
       <section>
-        <div
-          className="theme-container w-full mx-auto pt-16 "
-          style={{ paddingTop: "280px" }}
-        >
+        <div className="theme-container w-full mx-auto  py-[270px]">
           <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
             <div className="col-span-6">
               <div className="max-w-[476px]">
@@ -31,8 +30,8 @@ function AboutUs() {
                     Lorem ipsum dolor sit amet consectetur.
                   </li>
                 </ul>
-                <a href="service.html">
-                  <div className="home-two-btn-bg group bg-buisness-dark-black border-buisness-dark-black py-[15px] w-fit">
+                <Link to="/AboutUs">
+                  <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px] w-fit">
                     <span className="text-base group-hover:text-buisness-dark-black text-white transition-all duration-300 font-semibold font-inter relative z-10">
                       Explore Service
                     </span>
@@ -54,7 +53,7 @@ function AboutUs() {
                       ></path>
                     </svg>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="relative col-span-6 flex flex-col sm:flex-row justify-center items-center gap-[30px]">

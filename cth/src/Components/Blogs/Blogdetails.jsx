@@ -6,7 +6,7 @@ function Blogdetails() {
       <section id="h1-breadcrumb">
         <div className="h1-breadcrumb w-full h-fit overflow-hidden relative bg-main-gray pb-16 md:pb-24">
           <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none"></div>
-          <div className="theme-container mx-auto h-fit w-fit relative z-20">
+          <div className="theme-container mx-auto h-fit w-fit relative z-10">
             <div className="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
               <h3></h3>
               <h1 className="text-main-black text-34 font-semibold w-full text-center max-w-[624px]">
@@ -40,7 +40,8 @@ function Blogdetails() {
                 className="w-full object-cover"
               />
               <h1 className="text-24 sm:text-[30px] leading-[40px] tracking-tight text-main-black font-semibold mt-[30px]">
-                People The Office Analyzing Checking Finance Graphs
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores iure aliquam similique!
               </h1>
               <div className="flex mt-[22px] mb-2 gap-4 items-center">
                 <svg
@@ -57,37 +58,35 @@ function Blogdetails() {
                   ></path>
                 </svg>
                 <p className="text-paragraph flex-1">
-                  Meet our Support Engineer, the backbone of our technical
-                  assistance and customer satisfaction. Armed with a robust
-                  blend of technical acumen and exceptional problem-solving
-                  skills, our Support dedicated
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Omnis voluptatem ullam ipsam numquam praesentium harum
+                  laudantium ratione dolorem esse temporibus, cupiditate porro,
+                  rem error!
                 </p>
               </div>
               <p className="text-paragraph mb-[25px]">
-                Our team is comprised of seasoned professionals, each bringing a
-                wealth of experience and expertise to the table With years of
-                dedicated service in their respective fields, our team members
-                have honed their skills to deliver unparalleled results. From
-                intricate problem-solving innovative strategizing, their
-                collective experience forms the backbone of our success. Guided
-                by a commitment to excellence, our team combines their extensive
-                knowledge a passion for staying at the forefront of industry
-                advancements.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                minus beatae nemo quibusdam repellendus maxime quae
+                exercitationem. Quidem commodi architecto rerum illum, veniam
+                officiis atque impedit ipsa iste minima corrupti quasi eos,
+                magnam dignissimos cum ea necessitatibus quibusdam ipsam.
+                Ratione accusamus, laborum modi impedit hic molestias ducimus
+                ipsam fuga perferendis.
               </p>
               <h1 className="text-24 sm:text-[30px] leading-[40px] tracking-tight text-main-black font-semibold mt-[30px]">
-                Efficiency Elevated Unleashing the Power of IT Managed Solutions
-                Navigating Your IT Queries with Ease
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem odit animi sequi distinctio maiores accusantium
               </h1>
               <p className="text-paragraph mt-5 mb-[25px]">
-                Our team is comprised of seasoned professionals, each bringing a
-                wealth of experience and expertise to the table With years of
-                dedicated service in their respective fields, our team members
-                have honed their skills to deliver unparalleled results. From
-                intricate problem-solving innovative strategizing, their
-                collective experience forms the backbone of our success. Guided
-                by a commitment to excellence, our team combines their extensive
-                knowledge a passion for staying at the forefront of industry
-                advancements.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis corrupti officiis deleniti cumque aperiam recusandae
+                amet porro optio animi autem placeat debitis, est nemo minima
+                beatae facilis. Ullam suscipit eligendi vitae aut. Debitis quas
+                totam ratione sint magni labore nemo assumenda, aliquid deleniti
+                provident nihil! Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Incidunt aut, molestias soluta porro aliquid
+                ducimus dolorum impedit debitis nobis iure voluptatibus nesciunt
+                nostrum eaque.
               </p>
               <div className="flex flex-col xl:flex-row gap-[30px] pt-6">
                 <img
@@ -102,14 +101,12 @@ function Blogdetails() {
                 />
               </div>
               <h1 className="text-24 sm:text-[30px] leading-[40px] tracking-tight text-main-black font-semibold mt-[50px]">
-                A checklist to improve your daily routine
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </h1>
               <p className="text-paragraph mt-5 mb-[25px]">
-                From intricate problem-solving to innovative strategizing, their
-                collective experience forms the backbone of our success. Guided
-                by a commitment to excellence, our team combines their extensive
-                knowledge with a passion for staying at the forefront of
-                industry advancements.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+                voluptates aliquid tempora deleniti officiis nisi ea, odit
+                sapiente voluptatibus porro? Libero quasi dolorem deserunt.
               </p>
               <div className="flex flex-col sm:flex-row justify-between">
                 <div className="">
@@ -117,30 +114,30 @@ function Blogdetails() {
                     Popular Tags
                   </h1>
                   <div className="mt-3 flex gap-2.5 flex-wrap">
-                    <a
-                      href=""
+                    <Link
+                      to=""
                       className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                     >
                       <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                         Travel
                       </span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                     >
                       <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                         Fashion and Beauty
                       </span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                     >
                       <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                         Personal Finance
                       </span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-4 sm:mt-0">
@@ -148,8 +145,8 @@ function Blogdetails() {
                     Marketing
                   </h1>
                   <div className="mt-3 flex gap-6 flex-wrap">
-                    <a
-                      href=""
+                    <Link
+                      to=""
                       aria-label="facebook"
                       className="text-paragraph  transition-all duration-300"
                     >
@@ -165,9 +162,9 @@ function Blogdetails() {
                           fill="currentColor"
                         ></path>
                       </svg>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       aria-label="twitter"
                       className="text-paragraph  transition-all duration-300"
                     >
@@ -183,9 +180,9 @@ function Blogdetails() {
                           fill="currentColor"
                         ></path>
                       </svg>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       aria-label="instagram"
                       className="text-paragraph  transition-all duration-300"
                     >
@@ -203,9 +200,9 @@ function Blogdetails() {
                           fill="currentColor"
                         ></path>
                       </svg>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       aria-label="dribble"
                       className="text-paragraph  transition-all duration-300"
                     >
@@ -223,7 +220,7 @@ function Blogdetails() {
                           fill="currentColor"
                         ></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -236,16 +233,16 @@ function Blogdetails() {
                   />
                   <div className="flex-1">
                     <h1 className="text-18 text-main-black font-semibold">
-                      Tracy L. Benavides
+                      Rahul Raj
                     </h1>
                     <p className="text-paragraph mt-1.5">
-                      Welcome the digital realm where innovation meets
-                      excellence Company, embark on a relentless journey to
-                      redefine the landscape
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quia odit animi autem officiis! Ad rerum, aliquid sed sint
+                      quisquam porro sunt impedit facilis quaerat.
                     </p>
                     <div className="mt-4 flex gap-6 flex-wrap">
-                      <a
-                        href=""
+                      <Link
+                        to=""
                         aria-label="facebook"
                         className="text-paragraph  transition-all duration-300"
                       >
@@ -261,9 +258,9 @@ function Blogdetails() {
                             fill="currentColor"
                           ></path>
                         </svg>
-                      </a>
-                      <a
-                        href=""
+                      </Link>
+                      <Link
+                        to=""
                         aria-label="twitter"
                         className="text-paragraph  transition-all duration-300"
                       >
@@ -279,9 +276,9 @@ function Blogdetails() {
                             fill="currentColor"
                           ></path>
                         </svg>
-                      </a>
-                      <a
-                        href=""
+                      </Link>
+                      <Link
+                        to=""
                         aria-label="instagram"
                         className="text-paragraph  transition-all duration-300"
                       >
@@ -299,9 +296,9 @@ function Blogdetails() {
                             fill="currentColor"
                           ></path>
                         </svg>
-                      </a>
-                      <a
-                        href=""
+                      </Link>
+                      <Link
+                        to=""
                         aria-label="dribble"
                         className="text-paragraph  transition-all duration-300"
                       >
@@ -319,7 +316,7 @@ function Blogdetails() {
                             fill="currentColor"
                           ></path>
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div></div>
@@ -340,18 +337,19 @@ function Blogdetails() {
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row items-center justify-center">
                       <h1 className="flex-1 text-18 font-semibold text-main-black">
-                        Michael S. Manning
+                        rahul raj jaykr
                       </h1>
                       <p className="font-medium text-paragraph">
                         Decmber 15, 2024
                       </p>
                     </div>
                     <p className="text-paragraph mb-1.5">
-                      Our team is comprised of seasoned professionals, each
-                      bringing a wealth of experience expertise to the table
-                      with years of dedicated service in their respective
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Incidunt provident deleniti, voluptas, odit molestiae
+                      reiciendis tenetur consequatur magni voluptatum eligendi
+                      ut, tempore officiis autem!
                     </p>
-                    <a href="#">
+                    <Link to="#">
                       <div className="flex items-center gap-2 group">
                         <p className="mb-[1px] font-medium text-paragraph leading-5 font-inter border-b border-transparent before:block before:pb-[1px] before:border-purple before:font-medium before:text-purple before:leading-5 before:font-inter before:border-b before:content-['Reply'] before:absolute before:-bottom-[1px] before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-[21px] relative">
                           Reply
@@ -373,7 +371,7 @@ function Blogdetails() {
                           ></path>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -386,18 +384,18 @@ function Blogdetails() {
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row items-center justify-center">
                       <h1 className="flex-1 text-18 font-semibold text-main-black">
-                        Benjamin C. Janelle
+                        Anjali
                       </h1>
                       <p className="font-medium text-paragraph">
                         Decmber 15, 2024
                       </p>
                     </div>
                     <p className="text-paragraph mb-1.5">
-                      Our team is comprised seasonedy professionals bringing of
-                      experience and they expertise to the table with of
-                      dedicated service respective
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt sed voluptates explicabo aperiam et. Quaerat eius
+                      officiis totam suscipit in nemo error facere. Dolore.
                     </p>
-                    <a href="#">
+                    <Link to="#">
                       <div className="flex items-center gap-2 group">
                         <p className="mb-[1px] font-medium text-paragraph leading-5 font-inter border-b border-transparent before:block before:pb-[1px] before:border-purple before:font-medium before:text-purple before:leading-5 before:font-inter before:border-b before:content-['Reply'] before:absolute before:-bottom-[1px] before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-[21px] relative">
                           Reply
@@ -419,7 +417,7 @@ function Blogdetails() {
                           ></path>
                         </svg>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -463,9 +461,9 @@ function Blogdetails() {
                     </label>
                   </div>
                   <div className="col-span-6 md:col-span-12">
-                    <button className="home-two-btn-bg py-3 group bg-[#4A7DFF] border-[#4A7DFF] inline-flex">
-                      <span className="text-base text-white group-hover:text-[#4A7DFF] transition-all duration-300 font-inter relative z-10">
-                        Send Comments
+                    <button className="home-two-btn-bg py-3 group bg-[#89580A] border-[#89580A] inline-flex">
+                      <span className="text-base text-white group-hover:text-[#89580A] transition-all duration-300 font-inter relative z-10">
+                        Post Comments
                       </span>
                       <svg
                         className="relative z-10"
@@ -476,7 +474,7 @@ function Blogdetails() {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          className="group-hover:stroke-[#4A7DFF] transition-all duration-300"
+                          className="group-hover:stroke-[#89580A] transition-all duration-300"
                           d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
                           stroke="white"
                           strokeWidth="1.5"
@@ -524,8 +522,8 @@ function Blogdetails() {
               </h1>
               <ul className="mt-6">
                 <li className="my-1.5">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="text-paragraph  transition-all duration-300 flex gap-3 items-center"
                   >
                     <svg
@@ -544,11 +542,11 @@ function Blogdetails() {
                       ></path>
                     </svg>
                     <span>Personal Development</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-1.5">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="text-paragraph  transition-all duration-300 flex gap-3 items-center"
                   >
                     <svg
@@ -567,11 +565,11 @@ function Blogdetails() {
                       ></path>
                     </svg>
                     <span>Technology</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-1.5">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="text-paragraph  transition-all duration-300 flex gap-3 items-center"
                   >
                     <svg
@@ -590,11 +588,11 @@ function Blogdetails() {
                       ></path>
                     </svg>
                     <span>Health and Fitness</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-1.5">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="text-paragraph  transition-all duration-300 flex gap-3 items-center"
                   >
                     <svg
@@ -613,11 +611,11 @@ function Blogdetails() {
                       ></path>
                     </svg>
                     <span>Lifestyle</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-1.5">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="text-paragraph  transition-all duration-300 flex gap-3 items-center"
                   >
                     <svg
@@ -636,11 +634,11 @@ function Blogdetails() {
                       ></path>
                     </svg>
                     <span>Finance</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="my-1.5">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="text-paragraph  transition-all duration-300 flex gap-3 items-center"
                   >
                     <svg
@@ -659,7 +657,7 @@ function Blogdetails() {
                       ></path>
                     </svg>
                     <span>Business</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -669,8 +667,8 @@ function Blogdetails() {
                 Most view Stories
               </h1>
               <div className="mt-8">
-                <a
-                  href=""
+                <Link
+                  to=""
                   className="flex gap-2 sm:gap-[25px] items-center group mb-6"
                 >
                   <div className="w-20 h-[90px] rounded-md overflow-hidden bg-red-100">
@@ -686,10 +684,10 @@ function Blogdetails() {
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     </p>
                   </div>
-                </a>
+                </Link>
 
-                <a
-                  href=""
+                <Link
+                  to=""
                   className="flex gap-2 sm:gap-[25px] items-center group mb-6"
                 >
                   <div className="w-20 h-[90px] rounded-md overflow-hidden bg-red-100">
@@ -705,10 +703,10 @@ function Blogdetails() {
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     </p>
                   </div>
-                </a>
+                </Link>
 
-                <a
-                  href=""
+                <Link
+                  to=""
                   className="flex gap-2 sm:gap-[25px] items-center group"
                 >
                   <div className="w-20 h-[90px] rounded-md overflow-hidden bg-red-100">
@@ -724,7 +722,7 @@ function Blogdetails() {
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     </p>
                   </div>
-                </a>
+                </Link>
               </div>
 
               <div className="mt-[54px]">
@@ -732,54 +730,54 @@ function Blogdetails() {
                   Popular Tags
                 </h1>
                 <div className="mt-8 flex gap-2.5 flex-wrap">
-                  <a
-                    href=""
+                  <Link
+                    to=""
                     className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                   >
                     <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                       Recipes
                     </span>
-                  </a>
-                  <a
-                    href=""
+                  </Link>
+                  <Link
+                    to=""
                     className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                   >
                     <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                       Cooking Tips
                     </span>
-                  </a>
-                  <a
-                    href=""
+                  </Link>
+                  <Link
+                    to=""
                     className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                   >
                     <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                       Study Tips
                     </span>
-                  </a>
-                  <a
-                    href=""
+                  </Link>
+                  <Link
+                    to=""
                     className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                   >
                     <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                       Music
                     </span>
-                  </a>
-                  <a
-                    href=""
+                  </Link>
+                  <Link
+                    to=""
                     className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                   >
                     <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                       Destinations
                     </span>
-                  </a>
-                  <a
-                    href=""
+                  </Link>
+                  <Link
+                    to=""
                     className="group overflow-hidden flex justify-center items-center relative text-sm border border-purple/10 rounded-md py-1.5 before:inline-block before:absolute before:z-0 before:w-full before:h-full  before:scale-x-0 group hover:before:scale-x-100 before:origin-right hover:before:origin-left before:transition-transform before:ease-out before:duration-300"
                   >
                     <span className="px-[18px] relative z-20 transition-colors ease-in-out duration-300 ">
                       Pet Care
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
