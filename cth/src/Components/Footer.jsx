@@ -8,7 +8,7 @@ function Footer() {
   };
   return (
     <div className=" bg-gray-200">
-      <footer className=" py-6 px-10 font-sans tracking-wide container  mx-auto">
+      <footer className=" py-6 px-28  tracking-wide container  mx-auto">
         <div className="flex items-center justify-between max-sm:flex-col gap-5">
           <div>
             <a href="">
@@ -94,7 +94,7 @@ function Footer() {
         </div>
       </footer>
       <hr className="my-6 border-gray-500 container mx-auto" />
-      <div className="flex max-md:flex-col gap-4 container mx-auto px-8">
+      <div className="flex max-md:flex-col gap-4 px-24 container mx-auto ">
         <ul className="flex flex-wrap gap-4">
           <li className="text-sm">
             <a
@@ -158,7 +158,7 @@ function Footer() {
           </ul>
         </p>
       </div>
-      <div className="flex max-md:flex-col gap-4 container mx-auto px-8 py-8">
+      <div className="flex max-md:flex-col gap-4 container mx-auto px-24 py-8">
         <p className=" text-sm ">
           Copyright © 2024
           <a href="#" target="_blank" className="hover:underline mx-1">

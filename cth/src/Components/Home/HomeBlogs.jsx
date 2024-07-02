@@ -244,7 +244,10 @@ function HomeBlogs() {
               </div>
             </div>
           </div>
-          <hr className="bg-purple/10 mt-[120px]" />
+          <hr
+            className="bg-purple/10 mt-[120px] "
+            style={{ visibility: "hidden" }}
+          />
         </div>
       </section>
     </>

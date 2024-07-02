@@ -24,7 +24,7 @@ import SignUp from "./Components/Authentication/SignUp";
 function App() {
   useEffect(() => {
     AOS.init({
-      disable: function() {
+      disable: function () {
         let maxWidth = 800;
         return window.innerWidth < maxWidth;
       },

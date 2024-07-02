@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 function OurVision() {
   return (
     <>
-      <section id="service" className="w-full pt-4 bg-[#FFFBF0]">
-        <div className="mx-auto max-w-[1600px] w-full xl:py-[130px] py-[60px] xl:px-[80px] md:px-10 px-0 bg-main-gray bg-[#FFFBF0]  ">
+      <section id="service" className="w-full  bg-[#FFFBF0]">
+        <div className="mx-auto max-w-[1600px] w-full xl:py-[90px]  xl:px-[80px] md:px-10 px-0 bg-main-gray bg-[#FFFBF0]  ">
           <div className="w-full service-section-wrapper relative">
             <div className="theme-container mx-auto relative z-10">
               <div className="flex flex-col ">
-                <span className="text-black font-bold text-4xl  py-6  border-[#e7e3fa] leading-none rounded-full inline-block mb-5 ">
+                <span className="text-black font-bold text-4xl  py-2 border-[#e7e3fa] leading-none rounded-full inline-block mb-5 ">
                   Our Visions
                 </span>
               </div>

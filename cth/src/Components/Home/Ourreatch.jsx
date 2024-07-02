@@ -1,7 +1,10 @@
 function Ourreatch() {
   return (
     <>
-      <section className="pb-16 md:p-[130px] bg-[#ECE4D7] ">
+      <section
+        className="pb-16 md:p-[130px]  "
+        style={{ backgroundColor: "#FFFBF0" }}
+      >
         <div className="flex flex-col items-center">
           <span className=" font-bold px-5  text-[40px]   leading-none rounded-full inline-block pb-5 ">
             Our Reach

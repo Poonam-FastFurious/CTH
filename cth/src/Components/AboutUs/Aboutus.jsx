@@ -4,11 +4,58 @@ function Aboutus() {
   return (
     <>
       <section id="h1-breadcrumb">
-        <div className="h1-breadcrumb w-full h-auto overflow-hidden relative bg-main-gray  ">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/08f5/6b66/955db31e4ef94a065ce2a976e0869fb0?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mIU2dmXhUlgXQxI~wOmz64WVvn3MIvRyRQGTalaRNyftD8CBas9ZeIecK2B-8T-3DqEE5NsxDw04VTEWwOtE17jzVSbvGdVUNEf6qdNO~XYGAnZDgoyDLcbcdJW4OAa2XIjD~8ukUxxVBGompoxj7YPoxppVR9T~kCJzkKS8fKXnfwKvTm58TLvESGYCONhwuE13kv4FjCYf2lPsHAzxmiaozVr1e2m3pj73dQNwG4i5-a0vrF0KOkJ4I4ZXaIESgzXuyhhF4HhGvm5cSR3ybwvH3CbL6Z1DScDbqNQcBAP0JDcgiQU-gNP9VkJdR8fPSsTfOIk0ynK4YuEFc2OeGw__"
-            alt=""
-          />
+        <div className="h1-breadcrumb w-full h-fit overflow-hidden relative bg-main-gray pb-16 md:pb-24">
+          <div
+            className="win-grid win-grid-bg w-full h-full absolute left-0 top-0 z-0 overflow-hidden"
+            id="win-grid"
+          >
+            <img
+              src="https://s3-alpha-sig.figma.com/img/636d/7466/ea3240b95aa43cf0523aa8977ce9e858?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qo9V-XrJluLXSULN4sAaFcpABzwDSklok-3qvUvdOTrFzSbk29XEmlkgfTRJdczB1TdykK0W3LSX9Cldh25vwar4GNp2JsDxwYKmfdDFGMLiX5c4rruzE~yRbZVs1fW5JRlf74vyVWzO3xfsCgP2ttbjQ49Umq0q5otAh7xj6fmOFnM0HFNsd5otMdHGGTRKjuP7ruXF-84l5m76fDqVKs6zegvLtAXq7B4SLuw8uFYNeT3NJk59WJG9HKJtuVw6hF9~MMKys6Su6OmWuwCTGZZv2V6GxLuLh9MEOkW4cqNABby7zO-8r6BYC7kTmiRYIqBPP~Llzr2TjTIHOXZWew__"
+              alt=""
+              className=" w-full "
+            />
+          </div>
+          <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none">
+            <div className="flex justify-center">
+              <img src="assets/images/home-one-hero-circle-shadow.svg" alt="" />
+            </div>
+          </div>
+          <div className=" mx-auto h-auto w-fit relative z-10">
+            <div className="mt-[120px] md:mt-[272px] w-auto mx-auto relative z-10">
+              <h1 className="text-main-black text-34 sm:text-48 font-semibold w-full text-center">
+                About Us
+              </h1>
+              <div className="flex gap-5 items-center justify-center mt-4">
+                <Link
+                  to="/"
+                  className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
+                >
+                  Home
+                </Link>
+                <svg
+                  width="6"
+                  height="12"
+                  viewBox="0 0 6 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L5 6L1 11"
+                    stroke="#794AFF"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+                <Link
+                  href="/bloglist"
+                  className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
+                >
+                  About Us
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="w-full py-16 md:py-[130px]">
@@ -16,8 +63,8 @@ function Aboutus() {
           <div className="grid grid-cols-6 lg:grid-cols-12 gap-10 lg:gap-0 h-fit">
             <div className="col-span-6 lg:pr-[87px] flex h-full items-center">
               <div className="">
-                <div className="py-1.5 md:py-3 px-5 rounded-[30px] border-[1.2px] border-blue-seo/30 w-fit bg-blue-seo/10">
-                  <h1 className="text-base tracking-tight font-medium text-purple leading-5">
+                <div className="py-1.5 md:py-3 px-5 rounded-[30px] border-[1.2px]  w-fit bg-buisness-red">
+                  <h1 className="text-base tracking-tight font-medium text-white  leading-5">
                     About us
                   </h1>
                 </div>
@@ -177,7 +224,7 @@ function Aboutus() {
               />
             </div>
             <div className="col-span-6 ml-16 flex justify-center flex-col">
-              <h1 className="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
+              <h1 className="text-24 md:text-[40px] font-semibold text-main-black mt-2.5 md:mt-5 tracking-normal">
                 Compliance Townhall
               </h1>
               <p className="mt-5 md:mt-10 text-paragraph pb-10">
@@ -188,13 +235,14 @@ function Aboutus() {
                 dolor habitant diam lacus pharetra lectus tristique diam.
               </p>
               <Link to="#"></Link>
+              <hr className="mt-10 border-purple/10" />
             </div>
           </div>
         </div>
       </section>
       <section className="py-[70px] sm:py-[130px] w-full bg-[#A3896B]">
         <div className="theme-container w-full mx-auto">
-          <h2 className="max-w-[623px] font-semibold text-10 sm:text-24 text-main-black text-center mx-auto mt-5">
+          <h2 className="max-w-[623px] font-semibold text-[40px] sm:text-24 text-white text-center mx-auto mt-5  tracking-normal">
             Our Founder Stories
           </h2>
 

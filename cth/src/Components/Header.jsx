@@ -10,9 +10,9 @@ function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <>
+    <div>
       <div className="xl:flex w-full justify-center h-24 bg-white fixed top-0 z-20 hidden  shadow-md">
-        <div className="px-[70px] w-full">
+        <div className=" w-full py-6  px-28  tracking-wide container  mx-auto">
           <header className="flex justify-between py-6 mx-auto items-center h-full w-full relative">
             <div className="flex gap-24 items-center">
               <Link to="/">
@@ -26,6 +26,11 @@ function Header() {
                   to="/"
                 >
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link className="home-two-nav-item relative " to="AboutUs">
+                  About us
                 </Link>
               </li>
               <li>
@@ -52,11 +57,6 @@ function Header() {
               <li>
                 <Link className="home-two-nav-item relative" to="contact">
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link className="home-two-nav-item relative " to="AboutUs">
-                  About us
                 </Link>
               </li>
             </ul>
@@ -272,7 +272,7 @@ function Header() {
           </header>
         </Drawer>
       </header>
-    </>
+    </div>
   );
 }
 

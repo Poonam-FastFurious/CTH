@@ -5,32 +5,67 @@ function BlogList() {
     <>
       <div>
         <section id="h1-breadcrumb">
-          <div className="h1-breadcrumb w-full h-fit overflow-hidden relative bg-main-gray pb-16 md:pb-24">
-            <div
-              className="win-grid win-grid-bg w-full h-full absolute left-0 top-0 z-0"
-              id="win-grid"
-            >
-              <img
-                src="https://s3-alpha-sig.figma.com/img/7478/8db9/71641caa490608c8980ee5dd2ec60aa5?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h1rKYDwdjLIzfoZ1-qmK12iN-2naOBMspJxfpcA9e9DsNJ3vbRCwXDaedbnw4JaitB3I5lHxA8Ciy-C3gfkL3A8oT7d1s1vinwntaM5UPCqkXZx79daGJuUL4TH0khFmVhcwPXFAoWpaq0p6d7BSfPXLqDkmBo-35TQh4Bi5pFKoWHv3M4Ef-Orio~7rp3uU~NwbDFlB178UVn9k9ze5pJaTxxDg6hl6RzkRSlc1tzf60YHiIG4v0i7hj3tyFzjfwOOKq9qrKGVn2Wn-jyjdjhIF5jFNjupI1F5M-SGdnOA9ddyWOvyNILzgTXv6b07PDAheUewyiYNq-Oeq8OGCDw__"
-                alt=""
-              />
-            </div>
-            <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none"></div>
-            <div className="theme-container mx-auto h-fit w-fit relative z-10">
-              <div className="mt-[120px] md:mt-[272px] w-fit mx-auto relative z-10">
-                <h1 className="text-white text-34 font-semibold w-full text-center max-w-[624px]">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
+          <section id="h1-breadcrumb">
+            <div className="h1-breadcrumb w-full h-fit overflow-hidden relative bg-main-gray pb-16 md:pb-24">
+              <div
+                className="win-grid win-grid-bg w-full h-full absolute left-0 top-0 z-0 overflow-hidden"
+                id="win-grid"
+              >
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/636d/7466/ea3240b95aa43cf0523aa8977ce9e858?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qo9V-XrJluLXSULN4sAaFcpABzwDSklok-3qvUvdOTrFzSbk29XEmlkgfTRJdczB1TdykK0W3LSX9Cldh25vwar4GNp2JsDxwYKmfdDFGMLiX5c4rruzE~yRbZVs1fW5JRlf74vyVWzO3xfsCgP2ttbjQ49Umq0q5otAh7xj6fmOFnM0HFNsd5otMdHGGTRKjuP7ruXF-84l5m76fDqVKs6zegvLtAXq7B4SLuw8uFYNeT3NJk59WJG9HKJtuVw6hF9~MMKys6Su6OmWuwCTGZZv2V6GxLuLh9MEOkW4cqNABby7zO-8r6BYC7kTmiRYIqBPP~Llzr2TjTIHOXZWew__"
+                  alt=""
+                  className=" w-full "
+                />
+              </div>
+              <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none">
+                <div className="flex justify-center">
+                  <img
+                    src="assets/images/home-one-hero-circle-shadow.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className=" mx-auto h-auto w-fit relative z-10">
+                <div className="mt-[120px] md:mt-[272px] w-auto mx-auto relative z-10">
+                  <h1 className="text-main-black text-34 sm:text-48 font-semibold w-full text-center">
+                    Blogs
+                  </h1>
+                  <div className="flex gap-5 items-center justify-center mt-4">
+                    <Link
+                      to="/"
+                      className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
+                    >
+                      Home
+                    </Link>
+                    <svg
+                      width="6"
+                      height="12"
+                      viewBox="0 0 6 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L5 6L1 11"
+                        stroke="#794AFF"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                    <Link
+                      href="/bloglist"
+                      className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
+                    >
+                      Blogs
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
         <div className="max-w-5xl max-lg:max-w-2xl mx-auto">
-          <div className="flex flex-col justify-center  w-full">
-            <h2 className="text-[#A3896B] font-semibold text-[40px] sm:text-3xl pt-5">
-              Blogs
-            </h2>
-          </div>
+          <div className="flex flex-col justify-center  w-full"></div>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 max-md:justify-center mt-12 ">
             <div className="max-w-lg mx-auto ">
               <div className="bg-[#A3896B]  shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 p-4">

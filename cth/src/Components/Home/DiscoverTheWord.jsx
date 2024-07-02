@@ -14,7 +14,7 @@ function DiscoverTheWord() {
             <div className="flex flex-col sm:flex-row gap-10 items-center">
               <Link to="#">
                 <div className="home-two-btn-bg group bg-buisness-light-black border-white/10 py-[15px]">
-                  <span className="text-base group-hover:text-buisness-light-black text-white transition-all duration-300 font-semibold font-inter relative z-10">
+                  <span className="text-base group-hover:text-buisness-light-black text-white transition-all duration-300 font-semibold  relative z-10">
                     Join Our Team
                   </span>
                   <svg
@@ -39,7 +39,7 @@ function DiscoverTheWord() {
             </div>
           </div>
           <div className="grid gap-[30px] grid-cols-3 md:grid-cols-6 lg:grid-cols-12 mt-10 md:mt-[70px]">
-            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
+            <div className="col-span-3 border border-buisness-red bg-white rounded-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -174,7 +174,7 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div className=" bg-[#E7DDCD] ">
+              <div className=" bg-[#E7DDCD4D] ">
                 <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
                   <p className="text-black mt-1  ">Experience</p>
                   <p className="text-black mt-1  ">Avg. Attendance</p>
@@ -185,7 +185,7 @@ function DiscoverTheWord() {
                 </div>
               </div>
             </div>
-            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
+            <div className="col-span-3 border border-buisness-red bg-white rounded-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -320,7 +320,7 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div className=" bg-[#E7DDCD] ">
+              <div className=" bg-[#E7DDCD4D] ">
                 <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
                   <p className="text-black mt-1  ">Experience</p>
                   <p className="text-black mt-1  ">Avg. Attendance</p>
@@ -330,8 +330,8 @@ function DiscoverTheWord() {
                   <p className="text-black mt-1  ">100%</p>
                 </div>
               </div>
-            </div>
-            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
+            </div>{" "}
+            <div className="col-span-3 border border-buisness-red bg-white rounded-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -466,7 +466,7 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div className=" bg-[#E7DDCD] ">
+              <div className=" bg-[#E7DDCD4D] ">
                 <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
                   <p className="text-black mt-1  ">Experience</p>
                   <p className="text-black mt-1  ">Avg. Attendance</p>
@@ -476,8 +476,8 @@ function DiscoverTheWord() {
                   <p className="text-black mt-1  ">100%</p>
                 </div>
               </div>
-            </div>
-            <div className="col-span-3 border border-buisness-red bg-white rounded-t-lg">
+            </div>{" "}
+            <div className="col-span-3 border border-buisness-red bg-white rounded-lg">
               <div className="flex justify-center items-center relative group/main overflow-hidden">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-three/teams/1.webp"
@@ -612,7 +612,7 @@ function DiscoverTheWord() {
 
                 <span className=" mt-1 ">237 Sessions (28 Reviews)</span>
               </div>
-              <div className=" bg-[#E7DDCD] ">
+              <div className=" bg-[#E7DDCD4D] ">
                 <div className=" flex ml-8 items-center  gap-12 w-full mx-auto">
                   <p className="text-black mt-1  ">Experience</p>
                   <p className="text-black mt-1  ">Avg. Attendance</p>

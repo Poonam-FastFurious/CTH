@@ -8,12 +8,12 @@ function TestiMonial() {
   const nextRef = useRef(null);
   return (
     <>
-      <section className="py-16 md:py-[130px] bg-[#ECE4D7] mt-12">
+      <section className="py-16 md:py-[130px] bg-[#ECE4D7] ">
         <div className="theme-container mx-auto flex flex-col ">
           <h1 className="border text-main-black border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
             Loved by Our Testimonials
           </h1>
-          <h2 className="text-12 sm:text-14 font-bold text-main-black pt-5 max-w-[844px]">
+          <h2 className="text-12 sm:text-[40px] font-bold text-main-black pt-5 max-w-[844px]">
             What People are Saying
           </h2>
           <div className="w-full pt-10">

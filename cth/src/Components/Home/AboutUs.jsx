@@ -8,7 +8,7 @@ function AboutUs() {
           <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
             <div className="col-span-6">
               <div className="max-w-[476px]">
-                <h1 className="border text-main-black border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
+                <h1 className="border text-white border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
                   About us
                 </h1>
                 <h2 className="text-24 sm:text-48 font-semibold text-main-black pt-5">

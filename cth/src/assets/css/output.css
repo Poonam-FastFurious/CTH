@@ -438,9 +438,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   background-color: transparent;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  padding-top: 13px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1px;
   padding-bottom: 13px;
   --tw-text-opacity: 1;
   color: rgb(93 81 242 / var(--tw-text-opacity));
@@ -3826,7 +3826,7 @@ video {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(121 74 255 / var(--tw-border-opacity));
-  font-family: Inter, sans-serif;
+
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
@@ -3906,10 +3906,10 @@ video {
   bottom: -100px;
 }
 .home-two-btn-white-rev-sm {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+  padding-top: 0.225rem;
+  padding-bottom: 0.225rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .section-title-top-tag {
   display: inline-block;
