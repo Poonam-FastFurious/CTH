@@ -16,7 +16,7 @@ function Header() {
           <header className="flex justify-between py-6 mx-auto items-center h-full w-full relative">
             <div className="flex gap-24 items-center">
               <Link to="/">
-                <img src={logo} alt="logo" className=" w-20 h-auto" />
+                <img src={logo} alt="logo" className=" w-40 h-auto" />
               </Link>
             </div>
             <ul className="flex gap-10 text-main-black text-base leading-5 font-medium font-inter h-fit items-center">

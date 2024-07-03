@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import Aboutusimage from "../../assets/AboutUs.jpg";
 function Aboutus() {
   return (
     <>
@@ -9,11 +9,7 @@ function Aboutus() {
             className="win-grid win-grid-bg w-full h-full absolute left-0 top-0 z-0 overflow-hidden"
             id="win-grid"
           >
-            <img
-              src="https://s3-alpha-sig.figma.com/img/636d/7466/ea3240b95aa43cf0523aa8977ce9e858?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qo9V-XrJluLXSULN4sAaFcpABzwDSklok-3qvUvdOTrFzSbk29XEmlkgfTRJdczB1TdykK0W3LSX9Cldh25vwar4GNp2JsDxwYKmfdDFGMLiX5c4rruzE~yRbZVs1fW5JRlf74vyVWzO3xfsCgP2ttbjQ49Umq0q5otAh7xj6fmOFnM0HFNsd5otMdHGGTRKjuP7ruXF-84l5m76fDqVKs6zegvLtAXq7B4SLuw8uFYNeT3NJk59WJG9HKJtuVw6hF9~MMKys6Su6OmWuwCTGZZv2V6GxLuLh9MEOkW4cqNABby7zO-8r6BYC7kTmiRYIqBPP~Llzr2TjTIHOXZWew__"
-              alt=""
-              className=" w-full "
-            />
+            <img src={Aboutusimage} alt="" className=" w-full " />
           </div>
           <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none">
             <div className="flex justify-center">
@@ -28,7 +24,7 @@ function Aboutus() {
               <div className="flex gap-5 items-center justify-center mt-4">
                 <Link
                   to="/"
-                  className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
+                  className="home-two-nav-item leading-5  relative text-18 font-inter text-main-black font-bold  transition-all duration-300 hover:text-buisness-red"
                 >
                   Home
                 </Link>
@@ -49,7 +45,7 @@ function Aboutus() {
                 </svg>
                 <Link
                   href="/bloglist"
-                  className="home-two-nav-item leading-5 relative text-18 font-inter text-paragraph transition-all duration-300 hover:text-purple"
+                  className="home-two-nav-item  leading-5 relative text-18 font-inter text-main-black font-bold  transition-all duration-300 hover:text-buisness-red"
                 >
                   About Us
                 </Link>

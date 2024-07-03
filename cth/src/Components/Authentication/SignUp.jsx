@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 import image from "../../assets/loginimage.png";
+import { useState } from "react";
 function SignUp() {
+  const [step, setStep] = useState(1);
+
+  const nextStep = () => {
+    setStep(step + 1);
+  };
+
+  const prevStep = () => {
+    setStep(step - 1);
+  };
   return (
     <>
       <div className="flex flex-col justify-center items-center py-24 bg-white md:h-auto  ">
@@ -28,160 +38,181 @@ function SignUp() {
                   </button>
                 </div>
 
-                <div className="space-y-6">
-                  <div className="grid sm:grid-cols-3 gap-8">
+                {step === 1 && (
+                  <div className="space-y-6">
+                    <div className="grid sm:grid-cols-3 gap-8">
+                      <div>
+                        <label className="text-gray-800 text-sm mb-2 block">
+                          First Name
+                        </label>
+                        <input
+                          name="name"
+                          type="text"
+                          className="border w-full text-gray-800 text-sm px-4 py-3.5 rounded-md focus:bg-transparent outline-[#B08D57] transition-all"
+                          placeholder="Enter name"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-gray-800 text-sm mb-2 block">
+                          Middle Name*
+                        </label>
+                        <input
+                          name="mname"
+                          type="text"
+                          className="border w-full text-gray-800 text-sm px-4 py-3.5 rounded-md focus:bg-transparent outline-[#B08D57] transition-all"
+                          placeholder="Enter middle name"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-gray-800 text-sm mb-2 block">
+                          Last Name
+                        </label>
+                        <input
+                          name="lname"
+                          type="text"
+                          className="border w-full text-gray-800 text-sm px-4 py-3.5 rounded-md focus:bg-transparent outline-[#B08D57] transition-all"
+                          placeholder="Enter last name"
+                        />
+                      </div>
+                    </div>
                     <div>
                       <label className="text-gray-800 text-sm mb-2 block">
-                        First Name
+                        Contact Number *
                       </label>
                       <input
-                        name="name"
+                        name="contact"
                         type="text"
-                        className=" border w-full text-gray-800 text-sm px-4 py-3.5 rounded-md focus:bg-transparent outline-[#B08D57] transition-all"
-                        placeholder="Enter name"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
+                        placeholder="Enter Contact Number *"
                       />
                     </div>
                     <div>
                       <label className="text-gray-800 text-sm mb-2 block">
-                        Middle Name*
+                        Email Address *
                       </label>
                       <input
-                        name="lname"
-                        type="text"
-                        className="border w-full text-gray-800 text-sm px-4 py-3.5 rounded-md focus:bg-transparent outline-[#B08D57] transition-all"
-                        placeholder="Enter last name"
+                        name="email"
+                        type="email"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
+                        placeholder="Enter Email Address *"
                       />
                     </div>
                     <div>
                       <label className="text-gray-800 text-sm mb-2 block">
-                        Last Name
+                        Linkedin Profile
                       </label>
                       <input
-                        name="lname"
+                        name="linkedin"
                         type="text"
-                        className=" border w-full text-gray-800 text-sm px-4 py-3.5 rounded-md focus:bg-transparent outline-[#B08D57] transition-all"
-                        placeholder="Enter last name"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
+                        placeholder="Enter Linkedin Profile"
                       />
                     </div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Contact Number *
-                    </label>
-                    <input
-                      name="email"
-                      type="text"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Contact Number *"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Email Address *
-                    </label>
-                    <input
-                      name="password"
-                      type="password"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Email Address *"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Linkedin Profile
-                    </label>
-                    <input
-                      name="Linkedin Profile"
-                      type="text"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Linkedin Profile"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Address
-                    </label>
-                    <input
-                      name="Address"
-                      type="text"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Address"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Skills
-                    </label>
-                    <input
-                      name="Skills"
-                      type="text"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Skills"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Academic Projects
-                    </label>
-                    <input
-                      name="Academic Projects"
-                      type="text"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Academic Projects"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-gray-800 text-sm mb-2 block">
-                      Honours & Certifications
-                    </label>
-                    <input
-                      name="Honours & Certifications"
-                      type="text"
-                      className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
-                      placeholder="Enter Honours & Certifications"
-                    />
-                  </div>
-
-                  <div className="flex ">
-                    <input
-                      id="remember-me"
-                      name="remember-me"
-                      type="checkbox"
-                      className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                    />
-                    <label
-                      htmlFor="remember-me"
-                      className="text-gray-800 ml-3 block text-sm"
-                    >
-                      Are you agree to CTH
+                    <div className="!mt-12">
+                      <button
+                        type="button"
+                        onClick={nextStep}
+                        className="w-full py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-buisness-red hover:bg-buisness-red focus:outline-none"
+                      >
+                        Next
+                      </button>
+                    </div>
+                    <p className="text-gray-800 text-sm mt-6 text-center">
+                      Already have an account?
                       <Link
                         to="#"
                         className="text-[#B08D57] font-semibold hover:underline ml-1"
                       >
-                        Terms of Condition and Privacy Policy.
+                        Login here
                       </Link>
-                    </label>
+                    </p>
                   </div>
-                </div>
+                )}
+                {step === 2 && (
+                  <div className="space-y-5">
+                    <div>
+                      <label className="text-gray-800 text-sm mb-2 block">
+                        Address
+                      </label>
+                      <input
+                        name="address"
+                        type="text"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
+                        placeholder="Enter Address"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-gray-800 text-sm mb-2 block">
+                        Skills
+                      </label>
+                      <input
+                        name="skills"
+                        type="text"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
+                        placeholder="Enter Skills"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-gray-800 text-sm mb-2 block">
+                        Academic Projects
+                      </label>
+                      <input
+                        name="projects"
+                        type="text"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
+                        placeholder="Enter Academic Projects"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-gray-800 text-sm mb-2 block">
+                        Honours & Certifications
+                      </label>
+                      <input
+                        name="honours"
+                        type="text"
+                        className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md  outline-[#B08D57]"
+                        placeholder="Enter Honours & Certifications"
+                      />
+                    </div>
 
-                <div className="!mt-12">
-                  <button
-                    type="button"
-                    className="w-full py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-buisness-red hover:bg-buisness-red focus:outline-none"
-                  >
-                    Create an account
-                  </button>
-                </div>
-                <p className="text-gray-800 text-sm mt-6 text-center">
-                  Already have an account?
-                  <Link
-                    to="#"
-                    className="text-[#B08D57] font-semibold hover:underline ml-1"
-                  >
-                    Login here
-                  </Link>
-                </p>
+                    <div className="flex ">
+                      <input
+                        id="remember-me"
+                        name="remember-me"
+                        type="checkbox"
+                        className="h-4 w-4 shrink-0 text-[#B08D57]  border-gray-300 rounded"
+                      />
+                      <label
+                        htmlFor="remember-me"
+                        className="text-gray-800 ml-3 block text-sm"
+                      >
+                        Are you agree to CTH
+                        <Link
+                          to="#"
+                          className="text-[#B08D57] font-semibold hover:underline ml-1"
+                        >
+                          Terms of Condition and Privacy Policy.
+                        </Link>
+                      </label>
+                    </div>
+
+                    <div className="!mt-12 flex justify-between">
+                      <button
+                        type="button"
+                        onClick={prevStep}
+                        className="py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-[#B08D57] hover:bg-buisness-red focus:outline-none"
+                      >
+                        Previous
+                      </button>
+                      <button
+                        type="submit"
+                        className="py-3 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-buisness-red hover:bg-buisness-red focus:outline-none"
+                      >
+                        Create an account
+                      </button>
+                    </div>
+                  </div>
+                )}
               </form>
             </div>
           </div>
@@ -246,7 +277,7 @@ function SignUp() {
                 <input
                   name="email"
                   type="text"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Contact Number *"
                 />
               </div>
@@ -257,7 +288,7 @@ function SignUp() {
                 <input
                   name="password"
                   type="password"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Email Address *"
                 />
               </div>
@@ -268,7 +299,7 @@ function SignUp() {
                 <input
                   name="Linkedin Profile"
                   type="text"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Linkedin Profile"
                 />
               </div>
@@ -279,7 +310,7 @@ function SignUp() {
                 <input
                   name="Address"
                   type="text"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Address"
                 />
               </div>
@@ -290,7 +321,7 @@ function SignUp() {
                 <input
                   name="Skills"
                   type="text"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Skills"
                 />
               </div>
@@ -301,7 +332,7 @@ function SignUp() {
                 <input
                   name="Academic Projects"
                   type="text"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Academic Projects"
                 />
               </div>
@@ -312,7 +343,7 @@ function SignUp() {
                 <input
                   name="Honours & Certifications"
                   type="text"
-                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-blue-500"
+                  className="text-gray-800 bg-white border border-gray-300 w-full text-sm px-4 py-3 rounded-md outline-[#B08D57]"
                   placeholder="Enter Honours & Certifications"
                 />
               </div>

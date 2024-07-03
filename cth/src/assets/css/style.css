@@ -3,7 +3,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: manrope, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 30px;
 }
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: inter, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 .theme-container {
   max-width: 1330px;
