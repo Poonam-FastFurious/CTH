@@ -3,40 +3,42 @@ import { Link } from "react-router-dom";
 function AboutUs() {
   return (
     <>
-      <section>
-        <div className="theme-container w-full mx-auto  py-[270px]">
+      <>
+        <div className="theme-container w-full mx-auto xl:py-[90px] sm:py-[90px] md:py-[90px] lg:py-[90px] py-[90px]">
           <div className="grid grid-cols-6 xl:grid-cols-12 gap-y-10">
             <div className="col-span-6">
               <div className="max-w-[476px]">
-                <h1 className="border text-white border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium">
+                <h1 className="border text-white border-buisness-red/10 py-0.5 px-5 rounded-[30px] w-fit bg-buisness-red/5 font-medium tracking-wide poppins-font">
                   About us
                 </h1>
-                <h2 className="text-24 sm:text-48 font-semibold text-main-black pt-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                <h2 className="text-[30px] sm:text-44 font-semibold text-main-black pt-5 ">
+                  Discover Your Path to Seamless Compliance Management
                 </h2>
-                <p className="text-paragraph pt-5 sm:pt-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique distinctio, unde adipisci veritatis nam consectetur
-                  error maiores
+                <p className="text-paragraph pt-5 sm:pt-10 tracking-wide poppins-font">
+                  At Compliance Townhall, we specialise in empowering businesses
+                  with robust corporate compliance solutions. With a deep
+                  understanding of regulatory landscapes across industries, we
+                  offer tailored strategies to ensure your company meets all
+                  necessary standards efficiently
                 </p>
                 <ul className="flex flex-col gap-0.5 mt-6 mb-11">
-                  <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                    Lorem ipsum dolor sit amet consectetur.
+                  <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black tracking-wide poppins-font">
+                    Navigate Regulatory Requirements with Confidence
                   </li>
-                  <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                    Lorem ipsum dolor sit amet consectetur.
+                  <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black tracking-wide poppins-font">
+                    Stay Informed with Industry-Leading Insights
                   </li>
-                  <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black">
-                    Lorem ipsum dolor sit amet consectetur.
+                  <li className="flex items-center gap-2.5 before:h-[18px] before:w-[18px] before:rounded-full before:bg-buisness-red tick-before before:flex before:justify-center before:items-center text-main-black tracking-wide poppins-font">
+                    Dedicated Support to Safeguard Your Business
                   </li>
                 </ul>
                 <Link to="/AboutUs">
                   <div className="home-two-btn-bg group bg-buisness-red border-buisness-red py-[15px] w-fit">
-                    <span className="text-base group-hover:text-buisness-dark-black text-white transition-all duration-300 font-semibold font-inter relative z-10">
+                    <span className="text-base group-hover:text-buisness-dark-black text-white transition-all duration-300 font-semibold font-inter relative  tracking-wide poppins-font">
                       Explore Service
                     </span>
                     <svg
-                      className="relative z-10"
+                      className="relative "
                       width="7"
                       height="12"
                       viewBox="0 0 7 12"
@@ -78,16 +80,16 @@ function AboutUs() {
                 data-aos="fade-left"
                 src="https://quomodothemes.website/html/quland-html/assets/images/home-five/hero/about1.webp"
                 alt=""
-                className="relative z-10 hidden sm:block"
+                className="relative  hidden sm:block"
               />
               <img
                 data-aos="fade-left"
                 data-aos-delay="100"
                 src="https://quomodothemes.website/html/quland-html/assets/images/home-five/hero/about2.webp"
                 alt=""
-                className="relative z-10"
+                className="relative "
               />
-              <div className="bg-buisness-red p-[30px] rounded-2xl absolute z-10 bottom-8 w-[295px]">
+              <div className="bg-buisness-red p-[30px] rounded-2xl absolute  bottom-8 w-[295px]">
                 <img
                   src="https://quomodothemes.website/html/quland-html/assets/images/home-five/hero/about-card-shape.webp"
                   alt=""
@@ -109,10 +111,12 @@ function AboutUs() {
                       strokeLinejoin="round"
                     ></path>
                   </svg>
-                  <span className="text-sm text-white leading-8">We have</span>
+                  <span className="text-sm text-white leading-8  poppins-font tracking-wide poppins-font">
+                    We have
+                  </span>
                 </div>
                 <h1
-                  className="text-[27px] leading-[35px] text-white font-semibold tracking-tight max-w-[170px]"
+                  className="text-[27px] leading-[35px] text-white font-semibold tracking-tight max-w-[170px]   poppins-font"
                   data-scroll-qs="scroll"
                   data-count-qs="25"
                   data-type-qs="+ Years of Experience"
@@ -124,7 +128,7 @@ function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </>
     </>
   );
 }

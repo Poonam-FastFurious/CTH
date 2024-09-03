@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo-no-background.png";
+import { Link } from "react-router-dom";
 function Footer() {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
@@ -11,12 +12,12 @@ function Footer() {
       <footer className=" py-6 px-28  tracking-wide container  mx-auto">
         <div className="flex items-center justify-between max-sm:flex-col gap-5">
           <div>
-            <a href="">
-              <img src={logo} alt="logo" className="w-20 h-auto " />
-            </a>
+            <Link to="">
+              <img src={logo} alt="logo" className="w-40 h-auto " />
+            </Link>
           </div>
 
-          <ul className="flex flex-wrap justify-center gap-x-8 gap-4">
+          <ul className="flex flex-wrap justify-center gap-x-4 gap-3">
             <li>
               <svg
                 width="25"
@@ -32,7 +33,7 @@ function Footer() {
               </svg>
             </li>
 
-            <li>
+            {/* <li>
               <svg
                 width="22"
                 height="22"
@@ -45,7 +46,7 @@ function Footer() {
                   fill="black"
                 />
               </svg>
-            </li>
+            </li> */}
 
             <li>
               <svg
@@ -78,9 +79,9 @@ function Footer() {
             </li>
             <li>
               <svg
-                width="24"
-                height="17"
-                viewBox="0 0 24 17"
+                width="30"
+                height="30"
+                viewBox="0 0 25 23"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -96,144 +97,80 @@ function Footer() {
       <hr className="my-6 border-gray-500 container mx-auto" />
       <div className="flex max-md:flex-col gap-4 px-24 container mx-auto ">
         <ul className="flex flex-wrap gap-4">
-          <li className="text-sm">
-            <a
-              href="javascript:void(0)"
-              className=" font-semibold hover:underline"
-            >
+          {/* <li className="text-sm">
+            <Link to="#" className=" font-semibold hover:underline">
               Find member
-            </a>
-          </li>
+            </Link>
+          </li> */}
           <li className="text-sm">
-            <a
-              href="javascript:void(0)"
-              className=" font-semibold hover:underline"
-            >
+            <Link to="/Signup" className=" font-semibold hover:underline">
               Become a Member
-            </a>
+            </Link>
           </li>
           <li className="text-sm">
-            <a
-              href="javascript:void(0)"
+            <Link
+              to="https://towlhall.dev-testing-team.tech"
+              target="_blank"
               className=" font-semibold hover:underline"
             >
               Community
-            </a>
+            </Link>
           </li>
           <li className="text-sm">
-            <a
-              href="javascript:void(0)"
-              className=" font-semibold hover:underline"
-            >
+            <Link to="/bloglist" className=" font-semibold hover:underline">
               Blog
-            </a>
+            </Link>
           </li>
         </ul>
-        <p className="text-sm  md:ml-auto">
+        <div className="text-sm  md:ml-auto">
           <ul className="flex flex-wrap gap-4">
-            <li className="text-sm">
-              <a
-                href="javascript:void(0)"
-                className=" font-semibold hover:underline"
-              >
+            {/* <li className="text-sm">
+              <Link to="#" className=" font-semibold hover:underline">
                 Join CTH
-              </a>
-            </li>
+              </Link>
+            </li> */}
             <li className="text-sm">
-              <a
-                href="javascript:void(0)"
-                className=" font-semibold hover:underline"
-              >
+              <Link to="/contact" className=" font-semibold hover:underline">
                 Help Center
-              </a>
+              </Link>
             </li>
             <li className="text-sm">
-              <a
-                href="javascript:void(0)"
-                className=" font-semibold hover:underline"
-              >
+              <Link to="#" className=" font-semibold hover:underline">
                 Partnerships
-              </a>
+              </Link>
             </li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className="flex max-md:flex-col gap-4 container mx-auto px-24 py-8">
         <p className=" text-sm ">
           Copyright © 2024
-          <a href="#" target="_blank" className="hover:underline mx-1">
+          <Link to="#" target="_blank" className="hover:underline mx-1">
             CTH
-          </a>
+          </Link>
           All Rights Reserved.
         </p>
-        <p className="text-sm  md:ml-auto">
+        <div className="text-sm  md:ml-auto">
           <ul className="flex flex-wrap gap-4">
             <li className="text-sm">
-              <a
-                href="javascript:void(0)"
-                className=" font-semibold hover:underline"
-              >
+              <Link to="/contact" className=" font-semibold hover:underline">
                 Contact us
-              </a>
+              </Link>
             </li>
             <li className="text-sm">
-              <a
-                href="javascript:void(0)"
-                className=" font-semibold hover:underline"
-              >
+              <Link to="#" className=" font-semibold hover:underline">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li className="text-sm">
-              <a
-                href="javascript:void(0)"
-                className=" font-semibold hover:underline"
-              >
+              <Link to="#" className=" font-semibold hover:underline">
                 Term of use
-              </a>
+              </Link>
             </li>
           </ul>
-        </p>
-      </div>
-      <div className="w-full  relative z-10">
-        <div className="theme-container mx-auto h-full">
-          <div className="w-full h-full flex flex-col sm:flex-row  justify-center items-center ">
-            <div className="relative">
-              <a
-                href="#"
-                aria-label="go top"
-                className="w-[45px] h-[45px] rounded-full border-[3px] border-[#B08D57] flex justify-center items-center bg-buisness-red absolute -top-[10px] md:-top-[165px]"
-              >
-                <span>
-                  <svg
-                    width="45"
-                    height="45"
-                    viewBox="0 0 45 45"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="22.5"
-                      cy="22.5"
-                      r="21"
-                      fill="#B08D57"
-                      stroke="#B08D57"
-                      strokeWidth="3"
-                    ></circle>
-                    <path
-                      d="M19 21L23 17M23 17L27 21M23 17V29"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
+
       <button
         className="fixed bottom-4 right-4 inline-flex items-center justify-center text-sm font-medium disabled:pointer-events-none disabled:opacity-50 border rounded-full w-16 h-16 bg-buisness-red hover:bg-gray-700 m-0 cursor-pointer border-gray-200 bg-none p-0 normal-case leading-5 hover:text-gray-900"
         type="button"

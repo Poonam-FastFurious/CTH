@@ -1,16 +1,49 @@
 import { Link } from "react-router-dom";
-import Galleryimage from "../../assets/Galleryimage.jpg";
+
+import { useEffect, useState } from "react";
+import { Baseurl } from "../../Confige";
 function Gallery() {
+  const [banner, setBanner] = useState([]);
+  const [gallery, setGallery] = useState([]);
+  useEffect(() => {
+    fetch(Baseurl + "/api/v1/Banner/allabnner")
+      .then((Response) => Response.json())
+      .then((data) => {
+        const aboutusBanners = data.data.filter(
+          (banner) => banner.type === "gallery"
+        );
+        setBanner(aboutusBanners);
+      });
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(Baseurl + "/api/v1/gallery/all");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setGallery(data.data);
+      } catch (error) {
+        console.error("Error fetching banners:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
-      <section className="bg-white   md:pb-[120px] relative">
+      <section className="bg-white    relative">
         <section id="h1-breadcrumb">
           <div className="h1-breadcrumb w-full h-fit overflow-hidden relative bg-main-gray pb-16 md:pb-24">
             <div
               className="win-grid win-grid-bg w-full h-full absolute left-0 top-0 z-0 overflow-hidden"
               id="win-grid"
             >
-              <img src={Galleryimage} alt="" className=" w-full " />
+              {banner.map((img, index) => (
+                <img src={img.image} alt="" className=" w-full " key={index} />
+              ))}
             </div>
             <div className="absolute left-1/4 w-full top-[300px] overflow-hidden z-0 pointer-events-none">
               <div className="flex justify-center">
@@ -58,127 +91,19 @@ function Gallery() {
             </div>
           </div>
         </section>
-        <div className="theme-container w-full mx-auto">
-          <div className="grid gap-[30px] grid-cols-3 md:grid-cols-6 lg:grid-cols-12 mt-10 md:mt-[70px] bg-[#E7DDCD] p-12">
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src={
-                    "https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  }
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
+        <div className=" w-full mx-auto bg-[#E7DDCD]">
+          <div className="grid gap-[30px] grid-cols-3 md:grid-cols-6 lg:grid-cols-12  bg-[#E7DDCD] p-12 theme-container  mx-auto">
+            {gallery.map((items, index) => (
+              <div key={index} className="col-span-4">
+                <div className="flex justify-center items-center relative group/main overflow-hidden ">
+                  <img
+                    src={items.image}
+                    alt=""
+                    className=" h-90 object-cover rounded-lg overflow-hidden  "
+                  />
+                </div>
               </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="col-span-4"
-            >
-              <div className="flex justify-center items-center relative group/main overflow-hidden">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/9efe/c51a/84546c8c9128c609f1b2e01b00998ef7?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UcvQCKvWLTH2y99EN7Qv7F-dfDll6-MXtgWtZMJcp0dVWMTeA7zUE~sYNuWPIL2OneP64x1e1qJLhH7dsVacJwzr4OJH2ZOvYuwEqF2Gfly7AaFKYIi87LBTw-pE61diyz~7fxWBan2yqb7aTW7a9Zwmmy2wulDfc7Amt8Opb4c3A5lfPb4Fs0bBOkYbZd2dUuaRt-s1ZaGiojByLEVNIeNfHIKTkJ2i8hq7ESJnaBf9nDwCtxA6QM6SWOmqDkzaI6dhlr-OCvJvYGWjncF1hrXOSajEpLzVCOrFtUYL6WMGksHqplX1zIxJpGp-tAHrpobtJ5C03K7xu0KivX7KnA__"
-                  alt=""
-                  className="w-full h-90 object-cover rounded-lg overflow-hidden"
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

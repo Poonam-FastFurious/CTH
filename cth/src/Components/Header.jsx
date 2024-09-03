@@ -1,17 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import { Link } from "react-router-dom";
+import clsx from "clsx";
 import logo from "../assets/logo-no-background.png";
+
+import { Link } from "react-router-dom";
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location]);
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
+
+  const isActive = (path) => location.pathname === path;
   return (
     <div>
-      <div className="xl:flex w-full justify-center h-24 bg-white fixed top-0 z-20 hidden  shadow-md">
+      <div className="xl:flex w-full justify-center h-24 bg-white fixed top-0 z-20 hidden  shadow-md poppins-font">
         <div className=" w-full py-6  px-28  tracking-wide container  mx-auto">
           <header className="flex justify-between py-6 mx-auto items-center h-full w-full relative">
             <div className="flex gap-24 items-center">
@@ -22,49 +38,76 @@ function Header() {
             <ul className="flex gap-10 text-main-black text-base leading-5 font-medium font-inter h-fit items-center">
               <li className="group">
                 <Link
-                  className="home-two-nav-item leading-5 relative  w-fit before:h-[20px] flex items-center gap-2  delay-150"
+                  className={clsx(
+                    "leading-5   w-fit before:h-[20px] flex items-center gap-2  delay-150 relative",
+                    {
+                      "text-[#CA9352]": isActive("/"),
+                    }
+                  )}
                   to="/"
                 >
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="home-two-nav-item relative " to="AboutUs">
+                <Link
+                  className={clsx("relative", {
+                    "text-[#CA9352]": isActive("/AboutUs"),
+                  })}
+                  to="/AboutUs"
+                >
                   About us
                 </Link>
               </li>
               <li>
                 <Link
                   to="associatedMembers"
-                  className="home-two-nav-item relative "
+                  className={clsx("relative", {
+                    "text-[#CA9352]": isActive("/associatedMembers"),
+                  })}
                 >
-                  Associated Members
+                  Distinguish
                 </Link>
               </li>
               <li>
-                <Link className="home-two-nav-item relative " to="bloglist">
+                <Link
+                  className={clsx("relative", {
+                    "text-[#CA9352]": isActive("/bloglist"),
+                  })}
+                  to="/bloglist"
+                >
                   Blogs
                 </Link>
               </li>
               <li className="group relative">
                 <Link
                   to="/gallery"
-                  className="home-two-nav-item relative  flex items-center gap-2  delay-150"
+                  className={clsx(
+                    "relative flex items-center gap-2  delay-150",
+                    {
+                      "text-[#CA9352]": isActive("/gallery"),
+                    }
+                  )}
                 >
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link className="home-two-nav-item relative" to="contact">
+                <Link
+                  className={clsx("relative", {
+                    "text-[#CA9352]": isActive("/contact"),
+                  })}
+                  to="contact"
+                >
                   Contact
                 </Link>
               </li>
             </ul>
             <div className="flex gap-7 items-center">
-              <Link to="/Login">
+              <Link to="/membersip">
                 <div className="home-two-btn-white-rev   rounded-md home-two-btn-white-rev-sm group bg-[#B08D57] hover:bg-buisness-red border-[#101828]/10">
                   <span className="text-base -p-[20px] text-white hover:text-[#B08D57]  transition-all duration-300 font-semibold font-inter relative z-10">
-                    Log In
+                    Become Member
                   </span>
                   <svg
                     className="relative z-10"
@@ -85,30 +128,17 @@ function Header() {
                   </svg>
                 </div>
               </Link>
-              <Link to="blog">
-                <div className="home-two-btn-white-rev  rounded-md  home-two-btn-white-rev-sm    border-[#101828]/10 bg-[#89580A] ">
-                  <span className="text-base  text-main-black text-white  hover:text-[#B08D57]  transition-all duration-300 font-semibold font-inter relative z-10">
-                    Get Started
-                  </span>
-                  <svg
-                    className="relative z-10"
-                    width="7"
-                    height="12"
-                    viewBox="0 0 7 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+
+              <div className="home-two-btn-white-rev rounded-md home-two-btn-white-rev-sm border-[#101828]/10 bg-[#89580A] cursor-pointer">
+                <span className="text-base text-main-black text-white hover:text-[#B08D57] transition-all duration-300 font-semibold font-inter relative z-10">
+                  <Link
+                    to={`https://towlhall.dev-testing-team.tech`}
+                    target="_blank"
                   >
-                    <path
-                      className="  stroke-white transition-all duration-300 hover:stroke-[#D3B88D]"
-                      d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
-                      stroke="white"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                </div>
-              </Link>
+                    Sign In
+                  </Link>
+                </span>
+              </div>
             </div>
           </header>
         </div>
@@ -117,7 +147,7 @@ function Header() {
       <header className="flex xl:hidden flex-col relative">
         <div className="h-16 bg-white flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
           <Link to="#" aria-label="logo">
-            <img src={logo} alt="logo" className=" w-10 h-auto" />
+            <img src={logo} alt="logo" className=" w-36 h-auto" />
           </Link>
           <button
             onClick={toggleDrawer}
@@ -141,75 +171,52 @@ function Header() {
             </svg>
           </button>
         </div>
-        <Drawer
-          open={isOpen}
-          onClose={toggleDrawer}
-          direction="left"
-          className="bla bla bla"
-        >
+        <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
           <header className="flex xl:hidden flex-col relative">
             <div className="h-16 bg-white  text-black flex items-center justify-between fixed top-0 left-0 z-50 w-full px-2.5">
-              <Link to="#" aria-label="logo">
-                <img src={logo} alt="logo" className=" w-10 h-auto" />
+              <Link to="/" aria-label="logo">
+                <img src={logo} alt="logo" className=" w-36 h-auto" />
               </Link>
             </div>
             <div className="transition-all duration-300">
               <div
-                className={`w-full h-screen fixed z-40 transition-all duration-300 ${
-                  isOpen ? "left-0" : "-left-full"
-                }`}
-              ></div>
-              <div
                 className={`fixed h-screen overflow-y-scroll w-full top-16 transition-all duration-300 ${
                   isOpen ? "left-0" : "-left-full"
                 }`}
-                id="mobile-nav-div"
               >
                 <div className="flex gap-28 flex-col pl-5 pt-5">
                   <ul className="flex gap-5 flex-col text-paragraph text-base leading-5 font-medium font-inter">
-                    <li className="group relative">
-                      <Link className="home-two-nav-item leading-5 relative before:content-['Home'] w-fit m-nav-dropdown">
-                        Home
-                      </Link>
+                    <li>
+                      <div>
+                        <Link to="/" className="text-main-black">
+                          Home
+                        </Link>
+                      </div>
                     </li>
                     <li>
-                      <Link
-                        className="home-two-nav-item relative before:content-['Company'] w-fit"
-                        to="about"
-                      >
-                        Associated Members
-                      </Link>
+                      <Link to="/associatedMembers">Associated Members</Link>
                     </li>
                     <li>
-                      <Link
-                        className="home-two-nav-item relative before:content-['Services'] w-fit"
-                        to="service"
-                      >
-                        Blogs
+                      <Link className=" relative  w-fit" to="/bloglist">
+                        Blog
                       </Link>
                     </li>
 
-                    <li className="">
+                    <li className="group relative">
                       <Link
-                        to="#"
-                        className="home-two-nav-item relative  w-fit m-nav-dropdown"
+                        to="/gallery"
+                        className="relative flex items-center gap-2 delay-150"
                       >
                         Gallery
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        className="home-two-nav-item relative  w-fit"
-                        to="contact"
-                      >
+                      <Link className=" relative  w-fit" to="/contact">
                         Contact
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        className="home-two-nav-item relative  w-fit"
-                        to="contact"
-                      >
+                      <Link className=" relative  w-fit" to="/AboutUs">
                         About us
                       </Link>
                     </li>

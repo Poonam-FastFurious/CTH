@@ -1,18 +1,18 @@
 function Ourreatch() {
   return (
-    <>
+    <div className="bg-[#FFFBF0]">
       <section
-        className="pb-16 md:p-[130px]  "
+        className="mx-auto max-w-[1600px] w-full xl:py-[90px] sm:py-[90px] md:py-[90px] lg:py-[90px] py-[90px]   xl:px-[80px] md:px-10 px-0 bg-main-gray "
         style={{ backgroundColor: "#FFFBF0" }}
       >
         <div className="flex flex-col items-center">
-          <span className=" font-bold px-5  text-[40px]   leading-none rounded-full inline-block pb-5 ">
+          <span className=" font-bold px-5  text-[30px]   leading-none rounded-full inline-block pb-5 tracking-wide poppins-font">
             Our Reach
           </span>
         </div>
         <div className="theme-container w-full mx-auto pt-4 ">
-          <div className="  border-buisness-dark-black/10 grid grid-cols-3  gap-4 md:grid-cols-6 lg:grid-cols-12 rounded-[15px]">
-            <div className="col-span-3 bg-[#A3896B] rounded-md  border place-items-center  border-buisness-dark-black/10 p-5 md:p-[50px] lg:p-5 xl:p-[50px] flex flex-col items-center">
+          <div className="  border-buisness-dark-black/10 grid grid-cols-3  gap-6 md:grid-cols-6 lg:grid-cols-12 rounded-[15px]">
+            <div className="col-span-3 bg-[#A3896B] rounded-md  border place-items-center  border-buisness-dark-black/10 p-5 md:p-[50px] lg:p-5 xl:p-[50px] flex flex-col items-center text-wrap">
               <svg
                 width="65"
                 height="56"
@@ -25,11 +25,11 @@ function Ourreatch() {
                   fill="white"
                 />
               </svg>
-              <h2 className="text-18 font-medium text-white text-paragraph pt-2.5">
+              <h2 className="text-18 font-medium text-white text-center text-paragraph pt-2.5 tracking-wide poppins-font">
                 Cases Completed
               </h2>
               <h1
-                className="text-48 font-semibold text-white  "
+                className="text-48 font-semibold text-white  poppins-font "
                 data-scroll-qs="scroll"
                 data-count-qs="28"
                 data-type-qs="K+"
@@ -37,14 +37,14 @@ function Ourreatch() {
               >
                 28k+
               </h1>
-              <h2 className="text-18 pt-5 font-medium text-white text-paragraph ">
+              <h2 className="text-18 pt-5 font-medium text-white text-center text-paragraph tracking-wide poppins-font ">
                 Happy Members
               </h2>
             </div>
             <div className="col-span-3 bg-[#A3896B] rounded-md  border place-items-center  border-buisness-dark-black/10 p-5 md:p-[50px] lg:p-5 xl:p-[50px] flex flex-col items-center">
               <svg
-                width="77"
-                height="54"
+                width="65"
+                height="56"
                 viewBox="0 0 77 54"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ function Ourreatch() {
                 />
               </svg>
 
-              <h2 className="text-18 font-medium text-white text-paragraph pt-2.5">
+              <h2 className="text-18 font-medium text-white text-paragraph pt-2.5 tracking-wide poppins-font">
                 Empowered by
               </h2>
               <h1
@@ -67,14 +67,14 @@ function Ourreatch() {
               >
                 200K
               </h1>
-              <h2 className="text-18 pt-5 font-medium text-white text-paragraph ">
-                Associated Members
+              <h2 className="text-18 pt-5 font-medium text-white text-paragraph tracking-wide poppins-font ">
+                Our Associates
               </h2>
             </div>
             <div className="col-span-3 bg-[#A3896B] rounded-md  border place-items-center  border-buisness-dark-black/10 p-5 md:p-[50px] lg:p-5 xl:p-[50px] flex flex-col items-center">
               <svg
                 width="65"
-                height="65"
+                height="56"
                 viewBox="0 0 65 65"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,14 +85,9 @@ function Ourreatch() {
                     fill="white"
                   />
                 </g>
-                <defs>
-                  <clipPath id="clip0_167_666">
-                    <rect width="65" height="65" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
 
-              <h2 className="text-18 font-medium text-white text-paragraph pt-2.5">
+              <h2 className="text-18 font-medium text-white text-center text-paragraph pt-2.5 tracking-wide poppins-font">
                 Global community
               </h2>
               <h1
@@ -104,14 +99,14 @@ function Ourreatch() {
               >
                 150
               </h1>
-              <h2 className="text-18 pt-5 font-medium text-white text-paragraph ">
+              <h2 className="text-18 pt-5 font-medium text-white text-paragraph tracking-wide poppins-font ">
                 Countries
               </h2>
             </div>
             <div className="col-span-3 bg-[#A3896B] rounded-md  border place-items-center  border-buisness-dark-black/10 p-5 md:p-[50px] lg:p-5 xl:p-[50px] flex flex-col items-center">
               <svg
-                width="77"
-                height="54"
+                width="65"
+                height="56"
                 viewBox="0 0 77 54"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +117,7 @@ function Ourreatch() {
                 />
               </svg>
 
-              <h2 className="text-18 font-medium text-white text-paragraph pt-2.5">
+              <h2 className="text-18 font-medium text-white text-paragraph pt-2.5 tracking-wide poppins-font text-center">
                 We have built Our
               </h2>
               <h1
@@ -134,14 +129,14 @@ function Ourreatch() {
               >
                 20M+
               </h1>
-              <h2 className="text-18 pt-5 font-medium text-white text-paragraph ">
+              <h2 className="text-18 pt-5 font-medium text-white text-paragraph tracking-wide poppins-font ">
                 Connections
               </h2>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
